@@ -86,14 +86,6 @@
       "!src/index.js",
       "!src/setupServer.js",
       "!src/**/index.stories.js"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "statements": 99,
-        "branches": 99,
-        "functions": 99,
-        "lines": 99
-      }
-    }
+    ]
   }
 }
