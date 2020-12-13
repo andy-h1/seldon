@@ -1,0 +1,22 @@
+.line {
+    fill: none;
+    stroke: #88d781;
+    stroke-width: 5;
+}
+
+.dot {
+    fill: #0e1b12;
+    stroke: #f2f3f4;
+    stroke-width: 3;
+}
+
+.area {
+    fill: #242728;
+    fill-opacity: 85%;
+    stroke: none;
+}
+
+.grid {
+    stroke: black;
+    stroke-dasharray: 4;
+}
