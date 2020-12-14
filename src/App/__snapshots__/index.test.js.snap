@@ -5,8 +5,18 @@ exports[`App component should render 1`] = `
   <h1>
     Dashboard
   </h1>
-  <div>
-    <svg />
+  <div
+    aria-labelledby="nav-tab-undefined"
+    id="nav-tabpanel-undefined"
+    role="tabpanel"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-1"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      />
+    </div>
   </div>
 </div>
 `;
