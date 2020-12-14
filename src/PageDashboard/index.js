@@ -1,11 +1,11 @@
 import React from 'react';
-import { LineGraph } from '../LineGraph';
+import { TabPanel } from '../TabPanel';
 
 export const PageDashboard = () => {
   return (
     <div>
       <h1>Dashboard</h1>
-      <LineGraph />
+      <TabPanel />
     </div>
   );
 };
