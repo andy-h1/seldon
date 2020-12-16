@@ -1,11 +1,14 @@
 import React from 'react';
-import { TabPanel } from '../TabPanel';
+import { Grid } from '@material-ui/core';
+// import { NavTabs } from '../TabPanel';
+import { SidePanel } from '../SidePanel';
 
 export const PageDashboard = () => {
   return (
-    <div>
+    <Grid>
+      {/* <NavTabs /> */}
+      <SidePanel />
       <h1>Dashboard</h1>
-      <TabPanel />
-    </div>
+    </Grid>
   );
 };
