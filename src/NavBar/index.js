@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core';
+import { CampaignTable } from '../CampaignTable';
 // import { LineGraph } from '../LineGraph';
 
 const TabPanel = (props) => {
@@ -70,7 +71,7 @@ export const NavBar = () => {
         {/* <LineGraph /> */}
       </TabPanel>
       <TabPanel value={value} index={1}>
-        My campaigns
+        <CampaignTable />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Configure
