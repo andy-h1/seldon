@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core';
 import { CampaignTable } from '../CampaignTable';
+import { SumTable } from '../SumTable';
 // import { LineGraph } from '../LineGraph';
 
 const TabPanel = (props) => {
@@ -72,6 +73,7 @@ export const NavBar = () => {
       </TabPanel>
       <TabPanel value={value} index={1}>
         <CampaignTable />
+        <SumTable />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Configure
