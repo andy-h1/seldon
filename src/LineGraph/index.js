@@ -125,10 +125,16 @@ export const LineGraph = () => {
 
     // add the Y gridlines
     svg.append('g').attr('class', 'grid').call(make_y_gridlines().tickSize(-width).tickFormat(''));
+
+    return () => {
+      // might remove all svg elements on unmount
+      const svgToRemove = d3.select('svg');
+      svgToRemove.selectAll('*').remove();
+    };
   }, []);
-  return (
-    <div>
-      <svg ref={svgRef} />
-    </div>
-  );
+
+  return <svg ref={svgRef} className="svg-canvas" />;
 };
+
+// const svg = d3.select('')
+// svg.selectAll("*").remove()
