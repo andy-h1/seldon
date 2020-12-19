@@ -67,6 +67,22 @@ export const BarChart = () => {
           return height - y(d.value);
         });
 
+      svg
+        .selectAll('rect')
+        .transition()
+        .duration(800)
+        .attr('y', function (d) {
+          console.log({ data: d });
+          return y(d.value);
+        })
+        .attr('height', function (d) {
+          return height - y(d.value);
+        })
+        .delay(function (d, i) {
+          console.log(i);
+          return i * 100;
+        });
+
       // add the x Axis
       //   svg.append('g').attr('transform', `translate(0,${height})`).call(d3.axisBottom(x));
 

@@ -6,13 +6,14 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import { BarChart, Build, DataUsage, DoneOutline, Print } from '@material-ui/icons';
+import { colours } from '../../tokens';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
     height: '100%',
     maxWidth: 360,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: `${colours.darkGrey}`,
   },
 }));
 

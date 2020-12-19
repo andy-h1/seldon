@@ -2,11 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Tabs, Tab, Box, Typography } from '@material-ui/core';
+import { AppBar, Tabs, Tab, Typography } from '@material-ui/core';
 import { CampaignTable } from '../CampaignTable';
 import { SumTable } from '../SumTable';
 import { SubTable } from '../SubTable';
 // import { LineGraph } from '../LineGraph';
+import { colours } from '../../tokens';
 
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
@@ -19,11 +20,7 @@ const TabPanel = (props) => {
       aria-labelledby={`nav-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+      {value === index && <Typography>{children}</Typography>}
     </div>
   );
 };
@@ -42,10 +39,17 @@ const a11yProps = (index) => {
   };
 };
 
-const useStyles = makeStyles((theme) => ({
+// const Header = styled(AppBar)({
+//   backgroundColor: `${colours.darkGrey}`,
+//   color: `${colours.white}`,
+//   display: 'flex',
+//   justifyContent: 'center',
+// });
+
+const useStyles = makeStyles(() => ({
   root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: `${colours.darkGrey}`,
+    position: 'relative',
   },
 }));
 
@@ -58,8 +62,8 @@ export const NavBar = () => {
   };
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
+    <div>
+      <AppBar className={classes.root} position="static">
         <Tabs variant="standard" value={value} onChange={handleChange} aria-label="dashboard tabs">
           <Tab label="Analyze" {...a11yProps(0)} />
           <Tab label="My campaigns" {...a11yProps(1)} />
@@ -77,18 +81,10 @@ export const NavBar = () => {
         <SumTable />
         <SubTable />
       </TabPanel>
-      <TabPanel value={value} index={2}>
-        Configure
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        Customize
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        Research
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Inspect
-      </TabPanel>
+      <TabPanel value={value} index={2} />
+      <TabPanel value={value} index={3} />
+      <TabPanel value={value} index={4} />
+      <TabPanel value={value} index={5} />
     </div>
   );
 };
