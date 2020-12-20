@@ -24,6 +24,16 @@ const Circle = styled.circle`
 const Text = styled.text`
   dominant-baseline: middle;
   text-anchor: middle;
+  fill: white;
+`;
+
+const SVGWrapper = styled.div`
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const UsageDonut = ({ data }) => {
@@ -33,11 +43,7 @@ export const UsageDonut = ({ data }) => {
   const perimeter = 2 * Math.PI * radius;
   const perimeterGap = perimeter - perimeter * percentage;
   return (
-    <div>
-      <p>{name} used</p>
-      <p>
-        {total - usage}/{total} left
-      </p>
+    <SVGWrapper>
       <svg width="100%" height="100%" viewBox="0 0 100 100">
         <Circle
           color={color}
@@ -53,6 +59,10 @@ export const UsageDonut = ({ data }) => {
           {usage}
         </Text>
       </svg>
-    </div>
+      <p>{name} used</p>
+      <p>
+        {total - usage}/{total} left
+      </p>
+    </SVGWrapper>
   );
 };

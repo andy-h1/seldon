@@ -21,6 +21,11 @@ code {
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat (3, 1fr);
+`;
+
+export const SidePanelWrapper = styled.div`
+  grid-row: 2 / span 3;
 `;

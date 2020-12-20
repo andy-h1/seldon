@@ -1,13 +1,15 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Tabs, Tab, Typography } from '@material-ui/core';
+import { styled } from '@material-ui/core/styles';
+import { AppBar, Tabs, Tab, Typography, Grid } from '@material-ui/core';
 import { CampaignTable } from '../CampaignTable';
 import { SumTable } from '../SumTable';
 import { SubTable } from '../SubTable';
-// import { LineGraph } from '../LineGraph';
+import { ProjectViews } from '../ProjectViews';
+import { PageDashboard } from '../PageDashboard';
 import { colours } from '../../tokens';
+import { UsageStatistics } from '../UsageStatistics';
 
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
@@ -39,52 +41,58 @@ const a11yProps = (index) => {
   };
 };
 
-// const Header = styled(AppBar)({
-//   backgroundColor: `${colours.darkGrey}`,
-//   color: `${colours.white}`,
-//   display: 'flex',
-//   justifyContent: 'center',
-// });
+const Wrapper = styled(Grid)({
+  border: '1px solid red',
+});
 
-const useStyles = makeStyles(() => ({
-  root: {
-    backgroundColor: `${colours.darkGrey}`,
-    position: 'relative',
-  },
-}));
+const Header = styled(AppBar)({
+  backgroundColor: `${colours.darkGrey}`,
+  color: `${colours.white}`,
+  display: 'flex',
+  justifyContent: 'center',
+});
+
+const StyledTab = styled(Tab)({
+  textTransform: 'capitalize',
+  fontWeight: 'bold',
+});
 
 export const NavBar = () => {
-  const classes = useStyles();
   const [value, setValue] = React.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   return (
-    <div>
-      <AppBar className={classes.root} position="static">
-        <Tabs variant="standard" value={value} onChange={handleChange} aria-label="dashboard tabs">
-          <Tab label="Analyze" {...a11yProps(0)} />
-          <Tab label="My campaigns" {...a11yProps(1)} />
-          <Tab label="Configure" {...a11yProps(2)} />
-          <Tab label="Customize" {...a11yProps(3)} />
-          <Tab label="Research" {...a11yProps(4)} />
-          <Tab label="Inspect" {...a11yProps(5)} />
+    <Wrapper>
+      <Header position="static" elevation={0}>
+        <Tabs
+          variant="standard"
+          value={value}
+          onChange={handleChange}
+          aria-label="dashboard tabs"
+          centered="true"
+          indicatorColor="primary"
+        >
+          <StyledTab label="Analyze" {...a11yProps(0)} />
+          <StyledTab label="My campaigns" {...a11yProps(1)} />
+          <StyledTab label="Configure" {...a11yProps(2)} />
+          <StyledTab label="Customize" {...a11yProps(3)} />
+          <StyledTab label="Research" {...a11yProps(4)} />
+          <StyledTab label="Inspect" {...a11yProps(5)} />
         </Tabs>
-      </AppBar>
+      </Header>
       <TabPanel value={value} index={0}>
-        {/* <LineGraph /> */}
+        <PageDashboard />
+        <ProjectViews />
+        <UsageStatistics />
       </TabPanel>
       <TabPanel value={value} index={1}>
+        <PageDashboard />
         <CampaignTable />
         <SumTable />
         <SubTable />
       </TabPanel>
-      <TabPanel value={value} index={2} />
-      <TabPanel value={value} index={3} />
-      <TabPanel value={value} index={4} />
-      <TabPanel value={value} index={5} />
-    </div>
+    </Wrapper>
   );
 };

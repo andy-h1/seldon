@@ -10,14 +10,16 @@ import { colours } from '../../tokens';
 
 const useStyles = makeStyles(() => ({
   root: {
-    width: '100%',
+    width: 'fit-content',
     height: '100%',
-    maxWidth: 360,
     backgroundColor: `${colours.darkGrey}`,
     color: `${colours.white}`,
-  },
-  typography: {
-    color: `${colours.lightGrey}`,
+    fontSize: '55px',
+    border: '1px solid blue',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignContent: 'flex-start',
   },
 }));
 

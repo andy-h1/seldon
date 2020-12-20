@@ -1,16 +1,21 @@
 import React from 'react';
+import { Grid } from '@material-ui/core';
 import * as S from './styles';
 import { SidePanel } from '../SidePanel';
 import { Header } from '../Header';
-import { PageDashboard } from '../PageDashboard';
 
 const App = () => {
   return (
     <>
       <S.GlobalStyle />
-      <Header />
-      <SidePanel />
-      <PageDashboard />
+      <Grid container spacing={3}>
+        <Grid item xs={3} direction="column" justify="center" alignItems="flex-start">
+          <SidePanel />
+        </Grid>
+        <Grid item xs={9}>
+          <Header />
+        </Grid>
+      </Grid>
     </>
   );
 };
