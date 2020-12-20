@@ -1,14 +1,14 @@
 import React from 'react';
 import * as S from './styles';
 import { SidePanel } from '../SidePanel';
-import { NavBar } from '../NavBar';
+import { Header } from '../Header';
 import { PageDashboard } from '../PageDashboard';
 
 const App = () => {
   return (
     <>
       <S.GlobalStyle />
-      <NavBar />
+      <Header />
       <SidePanel />
       <PageDashboard />
     </>

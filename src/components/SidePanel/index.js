@@ -14,6 +14,10 @@ const useStyles = makeStyles(() => ({
     height: '100%',
     maxWidth: 360,
     backgroundColor: `${colours.darkGrey}`,
+    color: `${colours.white}`,
+  },
+  typography: {
+    color: `${colours.lightGrey}`,
   },
 }));
 
