@@ -4,8 +4,12 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import Avatar from '@material-ui/core/Avatar';
-import { BarChart, Build, DataUsage, DoneOutline, Print } from '@material-ui/icons';
+import IconButton from '@material-ui/core/IconButton';
+import BarChartOutlinedIcon from '@material-ui/icons/BarChartOutlined';
+import DataUsageOutlinedIcon from '@material-ui/icons/DataUsageOutlined';
+import DoneOutlineOutlinedIcon from '@material-ui/icons/DoneOutlineOutlined';
+import PrintOutlinedIcon from '@material-ui/icons/PrintOutlined';
+import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
 import { colours } from '../../tokens';
 
 const useStyles = makeStyles(() => ({
@@ -14,7 +18,7 @@ const useStyles = makeStyles(() => ({
     height: '100%',
     backgroundColor: `${colours.darkGrey}`,
     color: `${colours.white}`,
-    fontSize: '55px',
+    fontSize: '60px',
     border: '1px solid blue',
     display: 'flex',
     flexDirection: 'column',
@@ -30,41 +34,41 @@ export const SidePanel = () => {
     <List className={classes.root}>
       <ListItem>
         <ListItemAvatar>
-          <Avatar>
-            <DataUsage />
-          </Avatar>
+          <IconButton>
+            <DataUsageOutlinedIcon />
+          </IconButton>
         </ListItemAvatar>
         <ListItemText primary="Metrics" secondary="Track your apps across devices" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
-          <Avatar>
-            <DoneOutline />
-          </Avatar>
+          <IconButton>
+            <DoneOutlineOutlinedIcon />
+          </IconButton>
         </ListItemAvatar>
         <ListItemText primary="Results" secondary="View your results as an Excel file" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
-          <Avatar>
-            <BarChart />
-          </Avatar>
+          <IconButton>
+            <BarChartOutlinedIcon />
+          </IconButton>
         </ListItemAvatar>
         <ListItemText primary="Google Analytics" secondary="Track visits to your sites" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
-          <Avatar>
-            <Print />
-          </Avatar>
+          <IconButton>
+            <PrintOutlinedIcon />
+          </IconButton>
         </ListItemAvatar>
         <ListItemText primary="Reports" secondary="Get insights into the big data" />
       </ListItem>
       <ListItem>
         <ListItemAvatar>
-          <Avatar>
-            <Build />
-          </Avatar>
+          <IconButton>
+            <BuildOutlinedIcon />
+          </IconButton>
         </ListItemAvatar>
         <ListItemText primary="More Tools" secondary="Upgrade your plan to PRO" />
       </ListItem>

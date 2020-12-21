@@ -43,6 +43,7 @@ const a11yProps = (index) => {
 
 const Wrapper = styled(Grid)({
   border: '1px solid red',
+  margin: '0 1em',
 });
 
 const Header = styled(AppBar)({
@@ -65,7 +66,7 @@ export const NavBar = () => {
 
   return (
     <Wrapper>
-      <Header position="static" elevation={0}>
+      <Header position="static" elevation={0} m="2rem">
         <Tabs
           variant="standard"
           value={value}

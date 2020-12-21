@@ -83,6 +83,8 @@ export const BarChart = () => {
           return i * 100;
         });
 
+      svg.exit().remove();
+
       // add the x Axis
       //   svg.append('g').attr('transform', `translate(0,${height})`).call(d3.axisBottom(x));
 

@@ -16,7 +16,7 @@ const data = {
 export const Header = () => {
   return (
     <Grid container direction="row" justify="space-between" alignItems="stretch">
-      <Grid item xs={10} mr={1}>
+      <Grid item xs={10} mr={2}>
         <NavBar />
       </Grid>
       <Grid item xs={2}>
