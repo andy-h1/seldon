@@ -1,13 +1,19 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import * as d3 from 'd3';
+import styled from 'styled-components';
 import './styles.css';
+
+const LineGraphWrapper = styled.svg`
+  height: 200px;
+  width: 200px;
+`;
 
 export const LineGraph = () => {
   const svgRef = useRef();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const margin = { top: 50, right: 50, bottom: 50, left: 50 };
     const width = window.innerWidth - margin.left - margin.right; // Use the window's width
     const height = window.innerHeight - margin.top - margin.bottom; // Use the window's height
@@ -115,6 +121,7 @@ export const LineGraph = () => {
           .attr('x', xScale(i) - 20)
           .attr('y', yScale(data.y) - 65)
           .attr('opacity', '100')
+          .text('Project')
           .text(value);
       })
       .on('mouseout', (event) => {
@@ -133,7 +140,11 @@ export const LineGraph = () => {
     };
   }, []);
 
-  return <svg ref={svgRef} className="svg-canvas" />;
+  return (
+    <LineGraphWrapper>
+      <svg ref={svgRef} />
+    </LineGraphWrapper>
+  );
 };
 
 // const svg = d3.select('')
