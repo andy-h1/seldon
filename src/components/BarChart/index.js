@@ -91,5 +91,9 @@ export const BarChart = () => {
     });
   }, []);
 
-  return <svg ref={svgRef} className="svg-canvas" />;
+  return (
+    <div width="300px" height="300px">
+      <svg ref={svgRef} className="svg-canvas" />
+    </div>
+  );
 };

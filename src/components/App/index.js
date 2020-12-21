@@ -1,8 +1,8 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import * as S from './styles';
 import { SidePanel } from '../SidePanel';
 import { Header } from '../Header';
+import * as S from './styles';
 
 const App = () => {
   return (

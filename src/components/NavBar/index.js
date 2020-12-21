@@ -7,7 +7,7 @@ import { CampaignTable } from '../CampaignTable';
 import { SumTable } from '../SumTable';
 import { SubTable } from '../SubTable';
 import { ProjectViews } from '../ProjectViews';
-import { PageDashboard } from '../PageDashboard';
+import { HeaderDashboard } from '../HeaderDashboard';
 import { colours } from '../../tokens';
 import { UsageStatistics } from '../UsageStatistics';
 
@@ -83,12 +83,12 @@ export const NavBar = () => {
         </Tabs>
       </Header>
       <TabPanel value={value} index={0}>
-        <PageDashboard />
+        <HeaderDashboard />
         <ProjectViews />
         <UsageStatistics />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <PageDashboard />
+        <HeaderDashboard />
         <CampaignTable />
         <SumTable />
         <SubTable />
