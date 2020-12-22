@@ -5,146 +5,90 @@ import * as d3 from 'd3';
 import styled from 'styled-components';
 import './styles.css';
 
-const LineGraphWrapper = styled.div`
-  height: 200px;
-  width: 200px;
-`;
+// const LineGraphWrapper = styled.div`
+//   height: 300px;
+//   width: auto;
+// `;
 
 export const LineGraph = () => {
-  const svgRef = useRef();
-
-  useEffect(() => {
+  const chartRef = useRef(null);
+  const drawChart = () => {
     const margin = { top: 50, right: 50, bottom: 50, left: 50 };
-    const width = window.innerWidth - margin.left - margin.right; // Use the window's width
-    const height = window.innerHeight - margin.top - margin.bottom; // Use the window's height
+    const width = window.innerWidth - margin.left - margin.right;
+    const height = window.innerHeight - margin.top - margin.bottom;
 
-    // The number of datapoints
     const n = 21;
 
-    // 5. X scale will use the index of our data
     const xScale = d3
       .scaleLinear()
-      .domain([0, n - 1]) // input
-      .range([0, width]); // output
+      .domain([0, n - 1])
+      .range([0, width]);
 
-    // 6. Y scale will use the randomly generate number
-    const yScale = d3
-      .scaleLinear()
-      .domain([0, 1]) // input
-      .range([height, 0]); // output
+    const yScale = d3.scaleLinear().domain([0, 1]).range([height, 0]);
 
-    // 7. d3's line generator
     const line = d3
       .line()
-      .x((d, i) => {
-        return xScale(i);
-      }) // set the x values for the line generator
-      .y((d) => {
-        return yScale(d.y);
-      }) // set the y values for the line generator
-      .curve(d3.curveMonotoneX); // apply smoothing to the line
+      .x((d, i) => xScale(i))
+      .y((d) => yScale(d.y))
+      .curve(d3.curveMonotoneX);
 
     const area = d3
       .area()
-      .x((d, i) => {
-        return xScale(i);
-      }) // set the x values for the line generator
+      .x((d, i) => xScale(i))
       .y0(height)
-      .y1((d) => {
-        return yScale(d.y);
-      }) // set the y values for the line generator
-      .curve(d3.curveMonotoneX); // apply smoothing to the line
+      .y1((d) => yScale(d.y))
+      .curve(d3.curveMonotoneX);
 
-    // 8. An array of objects of length N. Each object has key -> value pair
-    // the key being "y" and the value is a random number
-    const dataset = d3.range(n).map((d) => {
-      return { y: d3.randomUniform(1)() };
-    });
-    // 1. Add the SVG to the page and employ #2
+    const dataset = d3.range(n).map((d, i) => ({ x: i, y: d3.randomUniform(1)() }));
+
     const svg = d3
-      .select('body')
-      .append('svg')
+      .select(chartRef.current)
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
+      .html(null)
       .append('g')
-      .attr('transform', `translate(${margin.left},${margin.top})`);
+      .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
-    // gridlines in y axis function
-    const make_y_gridlines = () => {
-      return d3.axisLeft(yScale).ticks(5);
-    };
+    const tooltip = svg.append('text').attr('class', 'tooltip');
 
-    const tooltip = svg.append('text');
+    svg.append('g').attr('transform', `translate(0, ${height})`).call(d3.axisBottom(xScale));
 
-    // 3. Call the x axis in a group tag
-    svg.append('g').attr('class', 'x axis').attr('transform', `translate(0,${height})`).call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
+    svg.append('g').attr('class', 'grid').call(d3.axisLeft(yScale).tickSize(-width).tickFormat(''));
+    svg.append('g').call(d3.axisLeft(yScale));
 
-    // 4. Call the y axis in a group tag
-    svg.append('g').attr('class', 'y axis').call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
-
-    // 9. Append the path, bind the data, and call the line generator
-    svg
-      .append('path')
-      .datum(dataset) // 10. Binds data to the line
-      .attr('class', 'line') // Assign a class for styling
-      .attr('d', line); // 11. Calls the line generator
+    svg.append('path').datum(dataset).attr('class', 'area').attr('d', area);
+    svg.append('path').datum(dataset).attr('class', 'line').attr('d', line);
 
     svg
-      .append('path')
-      .datum(dataset) // 10. Binds data to the line
-      .attr('class', 'area') // Assign a class for styling
-      .attr('d', area); // 11. Calls the line generator
-
-    // 12. Appends a circle for each datapoint
-    svg
-      .selectAll('.dot')
+      .selectAll('circle')
       .data(dataset)
       .enter()
-      .append('circle') // Uses the enter().append() method
-      .attr('class', 'dot') // Assign a class for styling
-      .attr('cx', (d, i) => {
-        return xScale(i);
-      })
-      .attr('cy', (d) => {
-        return yScale(d.y);
-      })
+      .append('circle')
+      .attr('class', 'dot')
+      .attr('cx', (d) => xScale(d.x))
+      .attr('cy', (d) => yScale(d.y))
       .attr('r', 5)
-      .on('mouseover', (event, data) => {
-        const e = svg.selectAll('.dot').nodes();
-        const i = e.indexOf(event.currentTarget);
-
-        const value = Math.round(data.y * 100) / 100;
-
-        d3.select(event.currentTarget).attr('r', '7');
+      .on('mouseover', (event, d) => {
+        d3.select(event.currentTarget).transition().duration(100).attr('r', 7);
 
         tooltip
-          .attr('x', xScale(i) - 20)
-          .attr('y', yScale(data.y) - 65)
-          .attr('opacity', '100')
-          .text(value);
+          .raise()
+          .attr('opacity', 1)
+          .attr('x', xScale(d.x) - 30)
+          .attr('y', yScale(d.y) - 15)
+          .text(d.y.toFixed(2));
       })
       .on('mouseout', (event) => {
-        d3.select(event.currentTarget).attr('r', '5');
-
-        tooltip.attr('opacity', '0');
+        d3.select(event.currentTarget).transition().duration(200).attr('r', 5);
+        tooltip.attr('opacity', 0);
       });
+  };
 
-    // add the Y gridlines
-    svg.append('g').attr('class', 'grid').call(make_y_gridlines().tickSize(-width).tickFormat(''));
-    svg.exit().remove();
-
-    return () => {
-      // might remove all svg elements on unmount
-      d3.select('svg').remove();
-    };
+  useEffect(() => {
+    drawChart();
+    window.addEventListener('resize', drawChart);
+    return () => window.removeEventListener('resize', drawChart);
   }, []);
 
-  return (
-    <LineGraphWrapper>
-      <svg ref={svgRef} />
-    </LineGraphWrapper>
-  );
+  return <svg width="100%" height="100%" ref={chartRef} />;
 };
-
-// const svg = d3.select('')
-// svg.selectAll("*").remove()

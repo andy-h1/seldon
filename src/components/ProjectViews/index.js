@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import { LineGraph } from '../LineGraph';
 import * as S from './styles';
 
@@ -7,7 +7,7 @@ export const ProjectViews = () => {
   return (
     <S.Wrapper>
       <S.TitleWrapper>
-        <h3>Project Views</h3>
+        <Typography variant="h5">Project Views</Typography>
         <Button variant="contained">Full report</Button>
       </S.TitleWrapper>
       <LineGraph />

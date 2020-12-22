@@ -3,7 +3,7 @@ import React from 'react';
 import { BarChart } from '../BarChart';
 import * as S from './styles';
 
-export const HighlightCard = ({ data }) => {
+export const CardHighlight = ({ data }) => {
   const { statistics, title } = data;
   return (
     <S.CardWrapper>

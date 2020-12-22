@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { Typography } from '@material-ui/core';
 
 const animate = (props) => keyframes`
   0% {
@@ -59,10 +60,10 @@ export const UsageDonut = ({ data }) => {
           {usage}
         </Text>
       </svg>
-      <p>{name} used</p>
-      <p>
+      <Typography>{name} used</Typography>
+      <Typography>
         {total - usage}/{total} left
-      </p>
+      </Typography>
     </SVGWrapper>
   );
 };
