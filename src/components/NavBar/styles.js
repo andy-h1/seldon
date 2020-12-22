@@ -6,6 +6,7 @@ import { colours } from '../../tokens';
 export const Header = styled(AppBar)({
   backgroundColor: `${colours.darkGrey}`,
   color: `${colours.white}`,
+  padding: 0,
   display: 'flex',
   justifyContent: 'center',
 });
@@ -13,4 +14,6 @@ export const Header = styled(AppBar)({
 export const StyledTab = styled(Tab)({
   textTransform: 'capitalize',
   fontWeight: 'bold',
+  padding: 0,
+  fontSize: '16px',
 });

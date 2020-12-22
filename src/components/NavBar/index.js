@@ -10,6 +10,7 @@ import { ProjectViews } from '../ProjectViews';
 import { HeaderDashboard } from '../HeaderDashboard';
 import { colours } from '../../tokens';
 import { UsageStatistics } from '../UsageStatistics';
+import { Statistics } from '../Statistics';
 
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
@@ -43,19 +44,19 @@ const a11yProps = (index) => {
 
 const Wrapper = styled(Grid)({
   border: '1px solid red',
-  margin: '0 1em',
+  margin: '0 1em 0 0',
 });
 
 const Header = styled(AppBar)({
   backgroundColor: `${colours.darkGrey}`,
   color: `${colours.white}`,
-  display: 'flex',
-  justifyContent: 'center',
+  borderBottom: `2px solid ${colours.lightGrey}`,
 });
 
 const StyledTab = styled(Tab)({
   textTransform: 'capitalize',
   fontWeight: 'bold',
+  fontSize: '16px',
 });
 
 export const NavBar = () => {
@@ -66,15 +67,8 @@ export const NavBar = () => {
 
   return (
     <Wrapper>
-      <Header position="static" elevation={0} m="2rem">
-        <Tabs
-          variant="standard"
-          value={value}
-          onChange={handleChange}
-          aria-label="dashboard tabs"
-          centered="true"
-          indicatorColor="primary"
-        >
+      <Header position="static" elevation={0}>
+        <Tabs variant="standard" value={value} onChange={handleChange} aria-label="dashboard tabs">
           <StyledTab label="Analyze" {...a11yProps(0)} />
           <StyledTab label="My campaigns" {...a11yProps(1)} />
           <StyledTab label="Configure" {...a11yProps(2)} />
@@ -85,11 +79,13 @@ export const NavBar = () => {
       </Header>
       <TabPanel value={value} index={0}>
         <HeaderDashboard />
+        <Statistics />
         <ProjectViews />
         <UsageStatistics />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <HeaderDashboard />
+        <Statistics />
         <CampaignTable />
         <SumTable />
         <SubTable />

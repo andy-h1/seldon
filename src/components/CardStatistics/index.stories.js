@@ -3,7 +3,7 @@ import { CardStatistics } from '.';
 
 const data = {
   title: 'Likes',
-  statistics: 1240,
+  statistic: 1240,
 };
 
 export default {

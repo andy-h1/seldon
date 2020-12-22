@@ -90,5 +90,5 @@ export const LineGraph = () => {
     return () => window.removeEventListener('resize', drawChart);
   }, []);
 
-  return <svg width="100%" height="100%" ref={chartRef} />;
+  return <svg width="100px" height="100px" ref={chartRef} />;
 };

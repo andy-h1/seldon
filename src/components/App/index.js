@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <S.GlobalStyle />
-      <Grid container spacing={3}>
+      <Grid container spacing={0}>
         <Grid item xs={3} direction="column" justify="center" alignItems="flex-start">
           <SidePanel />
         </Grid>

@@ -1,7 +1,8 @@
-import { Typography, Grid, IconButton } from '@material-ui/core';
+import { Typography, Grid, Button } from '@material-ui/core';
 import React from 'react';
 import GetAppOutlinedIcon from '@material-ui/icons/GetAppOutlined';
 import PrintOutlinedIcon from '@material-ui/icons/PrintOutlined';
+import { makeStyles } from '@material-ui/core/styles';
 import { DropdownMenu } from '../DropdownMenu';
 // import * as S from './styles';
 
@@ -14,20 +15,28 @@ const data = {
   },
 };
 
+const useStyles = makeStyles(() => ({
+  grid: {
+    margin: '3em 0 1em 0',
+  },
+}));
+
 export const HeaderDashboard = () => {
+  const classes = useStyles();
+
   return (
-    <Grid container direction="row" justify="space-between" alignItems="flex-start">
+    <Grid container direction="row" justify="space-between" alignItems="flex-start" className={classes.grid}>
       <Grid item xs={9}>
-        <Typography variant="h3">Dashboard</Typography>
+        <Typography variant="h4">Dashboard</Typography>
       </Grid>
       <Grid container xs={3} justify="space-around">
         <DropdownMenu props={data} />
-        <IconButton aria-label="print">
+        <Button aria-label="print" variant="contained">
           <PrintOutlinedIcon />
-        </IconButton>
-        <IconButton aria-label="download">
+        </Button>
+        <Button aria-label="download" variant="contained">
           <GetAppOutlinedIcon />
-        </IconButton>
+        </Button>
       </Grid>
     </Grid>
   );

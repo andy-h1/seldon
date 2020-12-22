@@ -15,7 +15,7 @@ const data = {
 
 export const Header = () => {
   return (
-    <Grid container direction="row" justify="space-between" alignItems="stretch">
+    <Grid container direction="row" justify="space-around" alignItems="stretch">
       <Grid item xs={10} mr={2}>
         <NavBar />
       </Grid>

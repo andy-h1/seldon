@@ -11,19 +11,20 @@ import DoneOutlineOutlinedIcon from '@material-ui/icons/DoneOutlineOutlined';
 import PrintOutlinedIcon from '@material-ui/icons/PrintOutlined';
 import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
 import { colours } from '../../tokens';
+import * as S from './styles';
 
 const useStyles = makeStyles(() => ({
   root: {
     width: 'fit-content',
-    height: '100%',
-    backgroundColor: `${colours.darkGrey}`,
+    height: '100vh',
     color: `${colours.white}`,
-    fontSize: '60px',
     border: '1px solid blue',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignContent: 'flex-start',
+    // display: 'flex',
+    // flexDirection: 'column',
+    // justifyContent: 'flex-start',
+  },
+  icon: {
+    color: `${colours.grey}`,
   },
 }));
 
@@ -32,10 +33,11 @@ export const SidePanel = () => {
 
   return (
     <List className={classes.root}>
+      <S.Button>+ New Campaign</S.Button>
       <ListItem>
         <ListItemAvatar>
           <IconButton>
-            <DataUsageOutlinedIcon />
+            <DataUsageOutlinedIcon className={classes.icon} />
           </IconButton>
         </ListItemAvatar>
         <ListItemText primary="Metrics" secondary="Track your apps across devices" />
@@ -43,7 +45,7 @@ export const SidePanel = () => {
       <ListItem>
         <ListItemAvatar>
           <IconButton>
-            <DoneOutlineOutlinedIcon />
+            <DoneOutlineOutlinedIcon className={classes.icon} />
           </IconButton>
         </ListItemAvatar>
         <ListItemText primary="Results" secondary="View your results as an Excel file" />
@@ -51,7 +53,7 @@ export const SidePanel = () => {
       <ListItem>
         <ListItemAvatar>
           <IconButton>
-            <BarChartOutlinedIcon />
+            <BarChartOutlinedIcon className={classes.icon} />
           </IconButton>
         </ListItemAvatar>
         <ListItemText primary="Google Analytics" secondary="Track visits to your sites" />
@@ -59,7 +61,7 @@ export const SidePanel = () => {
       <ListItem>
         <ListItemAvatar>
           <IconButton>
-            <PrintOutlinedIcon />
+            <PrintOutlinedIcon className={classes.icon} />
           </IconButton>
         </ListItemAvatar>
         <ListItemText primary="Reports" secondary="Get insights into the big data" />
@@ -67,7 +69,7 @@ export const SidePanel = () => {
       <ListItem>
         <ListItemAvatar>
           <IconButton>
-            <BuildOutlinedIcon />
+            <BuildOutlinedIcon className={classes.icon} />
           </IconButton>
         </ListItemAvatar>
         <ListItemText primary="More Tools" secondary="Upgrade your plan to PRO" />

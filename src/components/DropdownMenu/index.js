@@ -7,15 +7,16 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import { arrayOf, shape, string } from 'prop-types';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: 0,
     width: 'fit-content',
-    height: '50px',
+    height: '10px',
     minWidth: 100,
+    color: 'white',
   },
   selectEmpty: {
-    marginTop: 0,
+    marginTop: theme.spacing(0),
   },
 }));
 
@@ -26,9 +27,9 @@ export const DropdownMenu = ({ props }) => {
 
   return (
     <div>
-      <FormControl variant="filled" className={classes.formControl} size="small">
+      <FormControl variant="outlined" className={classes.formControl} size="small">
         <InputLabel id="dropdown-menu">{name}</InputLabel>
-        <Select labelId="dropdown-menu" id="dropdown-menu" label="Value" autoWidth="true">
+        <Select labelId="dropdown-menu" id="dropdown-menu" label="Value" className={classes.selectEmpty}>
           <MenuItem value={one}>{one}</MenuItem>
           <MenuItem value={two}>{two}</MenuItem>
           <MenuItem value={three}>{three}</MenuItem>

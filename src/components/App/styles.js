@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { colours } from '../../tokens';
 
 export const GlobalStyle = createGlobalStyle`
@@ -18,14 +18,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-`;
-
-export const Wrapper = styled.div`
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat (3, 1fr);
-`;
-
-export const SidePanelWrapper = styled.div`
-  grid-row: 2 / span 3;
 `;

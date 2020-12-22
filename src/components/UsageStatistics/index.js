@@ -36,6 +36,7 @@ const data = [
   },
 ];
 
+// add data into args
 export const UsageStatistics = () => {
   return (
     <div>
