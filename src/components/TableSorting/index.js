@@ -100,9 +100,6 @@ const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
   },
-  paper: {
-    width: '100%',
-  },
   visuallyHidden: {
     border: 0,
     clip: 'rect(0 0 0 0)',
