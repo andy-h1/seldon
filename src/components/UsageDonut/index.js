@@ -35,6 +35,7 @@ const SVGWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0.5em;
 `;
 
 export const UsageDonut = ({ data }) => {

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button, Grid, Typography } from '@material-ui/core';
+import { Button, Typography, makeStyles } from '@material-ui/core';
 import { UsageDonut } from '../UsageDonut';
 import * as S from './styles';
+import { colours } from '../../tokens';
 
 const data = [
   {
@@ -36,18 +37,25 @@ const data = [
   },
 ];
 
+const useStyles = makeStyles(() => ({
+  button: {
+    backgroundColor: `${colours.lightGrey}`,
+    color: `${colours.white}`,
+  },
+}));
+
 // add data into args
 export const UsageStatistics = () => {
+  const classes = useStyles();
   return (
     <div>
-      <Grid container xs={12}>
-        <Grid item xs={10}>
-          <Typography variant="h5">Usage Statistics</Typography>
-        </Grid>
-        <Grid item xs={2}>
-          <Button variant="contained">Upgrade Account</Button>
-        </Grid>
-      </Grid>
+      <S.TitleWrapper>
+        <Typography variant="h5">Usage Statistics</Typography>
+        <Button variant="contained" className={classes.button}>
+          Upgrade Account
+        </Button>
+      </S.TitleWrapper>
+
       <S.DonutWrapper>
         {data.map((item) => {
           return <UsageDonut data={item} key={item.name} />;

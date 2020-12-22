@@ -19,9 +19,6 @@ const useStyles = makeStyles(() => ({
     height: '100vh',
     color: `${colours.white}`,
     border: '1px solid blue',
-    // display: 'flex',
-    // flexDirection: 'column',
-    // justifyContent: 'flex-start',
   },
   icon: {
     color: `${colours.grey}`,

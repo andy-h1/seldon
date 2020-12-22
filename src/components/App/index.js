@@ -1,21 +1,30 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, makeStyles } from '@material-ui/core';
 import { SidePanel } from '../SidePanel';
 import { Header } from '../Header';
 import * as S from './styles';
 
+const useStyles = makeStyles(() => ({
+  root: {
+    flexGrow: 1,
+  },
+}));
+
 const App = () => {
+  const classes = useStyles();
   return (
     <>
       <S.GlobalStyle />
-      <Grid container spacing={0}>
-        <Grid item xs={3} direction="column" justify="center" alignItems="flex-start">
-          <SidePanel />
+      <div className={classes.root}>
+        <Grid container spacing={1}>
+          <Grid item xs={3} direction="column" justify="center" alignItems="flex-start">
+            <SidePanel />
+          </Grid>
+          <Grid item xs={8}>
+            <Header />
+          </Grid>
         </Grid>
-        <Grid item xs={9}>
-          <Header />
-        </Grid>
-      </Grid>
+      </div>
     </>
   );
 };

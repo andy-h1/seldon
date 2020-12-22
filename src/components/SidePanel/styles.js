@@ -13,7 +13,7 @@ export const Button = styled.button`
   padding: 0.5em;
   width: 250px;
   text-align: center;
-  margin: 0 0 1em 1em;
+  margin: 3.5em 0 1em 1em;
   outline: none;
 
   &:hover {

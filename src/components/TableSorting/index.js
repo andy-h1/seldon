@@ -8,7 +8,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
-import Paper from '@material-ui/core/Paper';
 
 const createData = (title, time, earned) => {
   return { title, time, earned };
@@ -97,16 +96,12 @@ EnhancedTableHead.propTypes = {
   orderBy: PropTypes.string.isRequired,
 };
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
   },
   paper: {
     width: '100%',
-    marginBottom: theme.spacing(2),
-  },
-  table: {
-    minWidth: 750,
   },
   visuallyHidden: {
     border: 0,
@@ -121,7 +116,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const SubTable = () => {
+export const TableSorting = () => {
   const classes = useStyles();
   const [order, setOrder] = React.useState('asc');
   const [orderBy, setOrderBy] = React.useState('calories');
@@ -134,32 +129,30 @@ export const SubTable = () => {
 
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
-        <TableContainer>
-          <Table size="small" className={classes.table} aria-labelledby="tableTitle" aria-label="sub-table ">
-            <EnhancedTableHead
-              classes={classes}
-              order={order}
-              orderBy={orderBy}
-              onRequestSort={handleRequestSort}
-              rowCount={rows.length}
-            />
-            <TableBody>
-              {stableSort(rows, getComparator(order, orderBy)).map((row) => {
-                return (
-                  <TableRow key={row.title}>
-                    <TableCell component="th" scope="row" padding="none">
-                      {row.title}
-                    </TableCell>
-                    <TableCell align="right">{row.time}</TableCell>
-                    <TableCell align="right">{row.earned}</TableCell>
-                  </TableRow>
-                );
-              })}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Paper>
+      <TableContainer>
+        <Table size="small" className={classes.table} aria-labelledby="tableTitle" aria-label="sub-table ">
+          <EnhancedTableHead
+            classes={classes}
+            order={order}
+            orderBy={orderBy}
+            onRequestSort={handleRequestSort}
+            rowCount={rows.length}
+          />
+          <TableBody>
+            {stableSort(rows, getComparator(order, orderBy)).map((row) => {
+              return (
+                <TableRow key={row.title}>
+                  <TableCell component="th" scope="row" padding="none">
+                    {row.title}
+                  </TableCell>
+                  <TableCell align="right">{row.time}</TableCell>
+                  <TableCell align="right">{row.earned}</TableCell>
+                </TableRow>
+              );
+            })}
+          </TableBody>
+        </Table>
+      </TableContainer>
     </div>
   );
 };

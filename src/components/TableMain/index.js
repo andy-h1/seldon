@@ -8,7 +8,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
-import Paper from '@material-ui/core/Paper';
 
 const createData = (campaign, efficiency, plays, finished, likes, comments) => {
   return { campaign, efficiency, plays, finished, likes, comments };
@@ -99,16 +98,14 @@ EnhancedTableHead.propTypes = {
   orderBy: PropTypes.string.isRequired,
 };
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
-  },
-  paper: {
-    width: '100%',
-    marginBottom: theme.spacing(2),
+    margin: '1em 0',
   },
   table: {
-    minWidth: 750,
+    // width: '100%',
+    fontSize: 18,
   },
   visuallyHidden: {
     border: 0,
@@ -123,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const CampaignTable = () => {
+export const TableMain = () => {
   const classes = useStyles();
   const [order, setOrder] = React.useState('asc');
   const [orderBy, setOrderBy] = React.useState('calories');
@@ -136,35 +133,33 @@ export const CampaignTable = () => {
 
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
-        <TableContainer>
-          <Table className={classes.table} aria-labelledby="tableTitle" aria-label="enhanced table">
-            <EnhancedTableHead
-              classes={classes}
-              order={order}
-              orderBy={orderBy}
-              onRequestSort={handleRequestSort}
-              rowCount={rows.length}
-            />
-            <TableBody>
-              {stableSort(rows, getComparator(order, orderBy)).map((row) => {
-                return (
-                  <TableRow key={row.campaign}>
-                    <TableCell component="th" scope="row" padding="none">
-                      {row.campaign}
-                    </TableCell>
-                    <TableCell align="right">{row.efficiency}</TableCell>
-                    <TableCell align="right">{row.plays}</TableCell>
-                    <TableCell align="right">{row.finished}</TableCell>
-                    <TableCell align="right">{row.likes}</TableCell>
-                    <TableCell align="right">{row.comments}</TableCell>
-                  </TableRow>
-                );
-              })}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Paper>
+      <TableContainer>
+        <Table className={classes.table} aria-labelledby="tableTitle" aria-label="enhanced table">
+          <EnhancedTableHead
+            classes={classes}
+            order={order}
+            orderBy={orderBy}
+            onRequestSort={handleRequestSort}
+            rowCount={rows.length}
+          />
+          <TableBody>
+            {stableSort(rows, getComparator(order, orderBy)).map((row) => {
+              return (
+                <TableRow key={row.campaign}>
+                  <TableCell component="th" scope="row" padding="none">
+                    {row.campaign}
+                  </TableCell>
+                  <TableCell align="right">{row.efficiency}</TableCell>
+                  <TableCell align="right">{row.plays}</TableCell>
+                  <TableCell align="right">{row.finished}</TableCell>
+                  <TableCell align="right">{row.likes}</TableCell>
+                  <TableCell align="right">{row.comments}</TableCell>
+                </TableRow>
+              );
+            })}
+          </TableBody>
+        </Table>
+      </TableContainer>
     </div>
   );
 };

@@ -3,11 +3,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@material-ui/core/styles';
 import { AppBar, Tabs, Tab, Typography, Grid } from '@material-ui/core';
-import { CampaignTable } from '../CampaignTable';
-import { SumTable } from '../SumTable';
-import { SubTable } from '../SubTable';
+import { TableMain } from '../TableMain';
 import { ProjectViews } from '../ProjectViews';
 import { HeaderDashboard } from '../HeaderDashboard';
+import { SubTables } from '../SubTables';
 import { colours } from '../../tokens';
 import { UsageStatistics } from '../UsageStatistics';
 import { Statistics } from '../Statistics';
@@ -86,9 +85,8 @@ export const NavBar = () => {
       <TabPanel value={value} index={1}>
         <HeaderDashboard />
         <Statistics />
-        <CampaignTable />
-        <SumTable />
-        <SubTable />
+        <TableMain />
+        <SubTables />
       </TabPanel>
     </Wrapper>
   );
