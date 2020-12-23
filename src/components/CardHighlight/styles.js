@@ -1,6 +1,23 @@
 import styled from 'styled-components';
+import { colours } from '../../tokens';
 
 export const CardWrapper = styled.div`
-  height: 300px;
-  width: 300px;
+  border-radius: 8px;
+  border: 1px solid ${colours.lightGrey};
+  background-image: ${colours.greenBlueGradient};
+  background: ${colours.darkGrey};
+  height: 140px;
+  width: 210px;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  &:hover {
+    border: 2px solid ${colours.white};
+    color: ${colours.white};
+  }
+`;
+
+export const Title = styled.h3`
+  color: ${colours.white};
+  margin: 1em;
 `;

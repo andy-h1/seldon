@@ -1,101 +1,46 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useRef } from 'react';
-import * as d3 from 'd3';
-import barData from './barData.csv';
+import React, { useEffect, useRef, useState } from 'react';
+import { select, scaleLinear, scaleBand } from 'd3';
 
 export const BarChart = () => {
+  const [data, setData] = useState([25, 30, 45, 60, 10, 65, 75, 12, 23, 34, 25, 25, 30, 45, 60, 10, 65, 75, 12, 23]);
   const svgRef = useRef();
 
+  // will be called initially and on every data change
   useEffect(() => {
-    // set the dimensions and margins of the graph
-    const margin = { top: 20, right: 20, bottom: 30, left: 40 };
-    const width = 960 - margin.left - margin.right;
-    const height = 500 - margin.top - margin.bottom;
+    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+    const width = 300 - margin.left - margin.right;
+    const height = 200 - margin.top - margin.bottom;
 
-    // set the ranges
-    const x = d3.scaleBand().range([0, width]).padding(0.1);
-    const y = d3.scaleLinear().range([height, 0]);
-
-    // append the svg object to the body of the page
-    // append a 'group' element to 'svg'
-    // moves the 'group' element to the top left margin
-    const svg = d3
-      .select('body')
-      .append('svg')
+    const svg = select(svgRef.current)
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
-      .append('g')
-      .attr('transform', `translate(${margin.left},${margin.top})`);
+      .html(null)
+      .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
-    // get the data
-    d3.csv(barData).then(function (data) {
-      // format the data
-      data.forEach(function (d) {
-        // convert string values to numbers
-        d.value = +d.value;
-      });
+    const xScale = scaleBand()
+      .domain(data.map((value, index) => index))
+      .range([0, 300])
+      .padding(0.2);
 
-      // Scale the range of the data in the domains
-      x.domain(
-        data.map(function (d) {
-          return d.date;
-        }),
-      );
-      y.domain([
-        0,
-        d3.max(data, function (d) {
-          return d.value;
-        }),
-      ]);
+    const yScale = scaleLinear().domain([0, 150]).range([150, 0]);
 
-      // append the rectangles for the bar chart
-      svg
-        .selectAll('.bar')
-        .data(data)
-        .enter()
-        .append('rect')
-        .attr('class', 'bar')
-        .attr('x', function (d) {
-          return x(d.date);
-        })
-        .attr('width', x.bandwidth())
-        .attr('y', function (d) {
-          return y(d.value);
-        })
-        .attr('height', function (d) {
-          return height - y(d.value);
-        });
+    svg
+      .selectAll('.bar')
+      .data(data)
+      .join('rect')
+      .attr('class', 'bar')
 
-      svg
-        .selectAll('rect')
-        .transition()
-        .duration(800)
-        .attr('y', function (d) {
-          console.log({ data: d });
-          return y(d.value);
-        })
-        .attr('height', function (d) {
-          return height - y(d.value);
-        })
-        .delay(function (d, i) {
-          console.log(i);
-          return i * 100;
-        });
-
-      svg.exit().remove();
-
-      // add the x Axis
-      //   svg.append('g').attr('transform', `translate(0,${height})`).call(d3.axisBottom(x));
-
-      //   // add the y Axis
-      //   svg.append('g').call(d3.axisLeft(y));
-    });
+      .style('transform', 'scale(1, -1)')
+      .attr('x', (value, index) => xScale(index))
+      .attr('y', -150)
+      .attr('width', xScale.bandwidth())
+      .transition()
+      .duration(1000)
+      .attr('fill', 'grey')
+      .attr('height', (value) => 150 - yScale(value));
   }, []);
 
-  return (
-    <div width="300px" height="300px">
-      <svg ref={svgRef} className="svg-canvas" />
-    </div>
-  );
+  return <svg ref={svgRef} />;
 };

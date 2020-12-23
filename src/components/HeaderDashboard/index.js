@@ -1,11 +1,9 @@
-import { Typography, Grid, Button } from '@material-ui/core';
+import { Typography, Button } from '@material-ui/core';
 import React from 'react';
 import GetAppOutlinedIcon from '@material-ui/icons/GetAppOutlined';
 import PrintOutlinedIcon from '@material-ui/icons/PrintOutlined';
-import { makeStyles } from '@material-ui/core/styles';
 import { DropdownMenu } from '../DropdownMenu';
-import { colours } from '../../tokens';
-// import * as S from './styles';
+import * as S from './styles';
 
 const data = {
   name: 'Date',
@@ -16,33 +14,28 @@ const data = {
   },
 };
 
-const useStyles = makeStyles(() => ({
-  grid: {
-    margin: '3em 0 1em 0',
-  },
-  button: {
-    backgroundColor: `${colours.lightGrey}`,
-    color: `${colours.white}`,
-  },
-}));
+// const useStyles = makeStyles(() => ({
+//   button: {
+//     backgroundColor: `${colours.lightGrey}`,
+//     color: `${colours.white}`,
+//   },
+// }));
 
 export const HeaderDashboard = () => {
-  const classes = useStyles();
+  const classes = S.useStyles();
 
   return (
-    <Grid container direction="row" justify="space-between" alignItems="flex-start" className={classes.grid}>
-      <Grid item xs={9}>
-        <Typography variant="h4">Dashboard</Typography>
-      </Grid>
-      <Grid container xs={3} justify="space-around">
+    <S.Wrapper>
+      <Typography variant="h4">Dashboard</Typography>
+      <S.ButtonWrapper>
         <DropdownMenu props={data} />
-        <Button aria-label="print" variant="contained" className={classes.button}>
+        <Button aria-label="print" variant="contained" className={classes.button} size="small">
           <PrintOutlinedIcon />
         </Button>
-        <Button aria-label="download" variant="contained" className={classes.button}>
+        <Button aria-label="download" variant="contained" className={classes.button} size="small">
           <GetAppOutlinedIcon />
         </Button>
-      </Grid>
-    </Grid>
+      </S.ButtonWrapper>
+    </S.Wrapper>
   );
 };

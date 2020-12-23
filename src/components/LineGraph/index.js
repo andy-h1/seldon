@@ -2,13 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
-import styled from 'styled-components';
 import './styles.css';
-
-// const LineGraphWrapper = styled.div`
-//   height: 300px;
-//   width: auto;
-// `;
 
 export const LineGraph = () => {
   const chartRef = useRef(null);
