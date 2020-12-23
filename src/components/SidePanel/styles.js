@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ListItemText, makeStyles } from '@material-ui/core';
 import { colours } from '../../tokens';
 
 export const Button = styled.button`
@@ -18,5 +19,23 @@ export const Button = styled.button`
 
   &:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+`;
+
+export const useStyles = makeStyles(() => ({
+  root: {
+    width: 'fit-content',
+    height: '100vh',
+    color: `${colours.white}`,
+    border: '1px solid blue',
+  },
+  icon: {
+    color: `${colours.grey}`,
+  },
+}));
+
+export const Text = styled(ListItemText)`
+  p {
+    color: ${colours.grey};
   }
 `;

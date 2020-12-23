@@ -4,6 +4,9 @@ import { LineGraph } from '../LineGraph';
 import { colours } from '../../tokens';
 import * as S from './styles';
 
+const width = 500;
+const height = 500;
+
 const useStyles = makeStyles(() => ({
   button: {
     backgroundColor: `${colours.lightGrey}`,
@@ -21,7 +24,7 @@ export const ProjectViews = () => {
           Full report
         </Button>
       </S.TitleWrapper>
-      <LineGraph />
+      <LineGraph width={width} height={height} />
     </S.Wrapper>
   );
 };

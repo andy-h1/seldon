@@ -20,7 +20,7 @@ const App = () => {
           <Grid item xs={3} direction="column" justify="center" alignItems="flex-start">
             <SidePanel />
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={8} justify="center">
             <Header />
           </Grid>
         </Grid>
