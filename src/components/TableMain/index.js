@@ -8,7 +8,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
-import styled from 'styled-components';
+import { colours } from '../../tokens';
 
 const createData = (campaign, efficiency, plays, finished, likes, comments) => {
   return { campaign, efficiency, plays, finished, likes, comments };
@@ -63,10 +63,11 @@ const EnhancedTableHead = (props) => {
   };
 
   return (
-    <TableHead>
+    <TableHead className={classes.header}>
       <TableRow>
         {headCells.map((headCell) => (
           <TableCell
+            className={classes.headerText}
             key={headCell.id}
             align={headCell.numeric ? 'right' : 'left'}
             padding={headCell.disablePadding ? 'none' : 'default'}
@@ -115,14 +116,23 @@ const useStyles = makeStyles(() => ({
     top: 20,
     width: 1,
   },
+  text: {
+    color: 'white',
+    fontSize: '19px',
+    fontWeight: 'bold',
+    borderBottom: `1 px solid ${colours.black}`,
+  },
+  header: {
+    borderBottom: `3px solid ${colours.black}`,
+  },
+  headerText: {
+    color: 'white',
+    fontSize: '16px',
+  },
+  row: {
+    borderBottom: `1 px solid ${colours.black}`,
+  },
 }));
-
-export const TableHeader = styled(TableCell)`
-  th {
-    color: white;
-    font-weight: 600;
-  }
-`;
 
 export const TableMain = () => {
   const classes = useStyles();
@@ -138,7 +148,7 @@ export const TableMain = () => {
   return (
     <div className={classes.root}>
       <TableContainer>
-        <Table className={classes.table} aria-labelledby="tableTitle" aria-label="enhanced table">
+        <Table aria-labelledby="tableTitle" aria-label="enhanced table">
           <EnhancedTableHead
             classes={classes}
             order={order}
@@ -146,18 +156,28 @@ export const TableMain = () => {
             onRequestSort={handleRequestSort}
             rowCount={rows.length}
           />
-          <TableBody>
+          <TableBody className={classes.row}>
             {stableSort(rows, getComparator(order, orderBy)).map((row) => {
               return (
                 <TableRow key={row.campaign}>
-                  <TableHeader component="th" scope="row" padding="none">
+                  <TableCell className={classes.text} component="th" scope="row" padding="none">
                     {row.campaign}
-                  </TableHeader>
-                  <TableCell align="right">{row.efficiency}</TableCell>
-                  <TableCell align="right">{row.plays}</TableCell>
-                  <TableCell align="right">{row.finished}</TableCell>
-                  <TableCell align="right">{row.likes}</TableCell>
-                  <TableCell align="right">{row.comments}</TableCell>
+                  </TableCell>
+                  <TableCell className={classes.text} align="right">
+                    {row.efficiency}
+                  </TableCell>
+                  <TableCell className={classes.text} align="right">
+                    {row.plays}
+                  </TableCell>
+                  <TableCell className={classes.text} align="right">
+                    {row.finished}
+                  </TableCell>
+                  <TableCell className={classes.text} align="right">
+                    {row.likes}
+                  </TableCell>
+                  <TableCell className={classes.text} align="right">
+                    {row.comments}
+                  </TableCell>
                 </TableRow>
               );
             })}
