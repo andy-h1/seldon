@@ -15,7 +15,6 @@ const data = {
 
 const useStyles = makeStyles(() => ({
   grid: {
-    border: '1px solid white',
     width: '100%',
   },
 }));

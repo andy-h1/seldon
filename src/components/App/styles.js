@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { makeStyles } from '@material-ui/core';
 import { colours } from '../../tokens';
 
 export const GlobalStyle = createGlobalStyle`
@@ -19,3 +20,9 @@ code {
     monospace;
 }
 `;
+
+export const useStyles = makeStyles(() => ({
+  root: {
+    flexGrow: 1,
+  },
+}));

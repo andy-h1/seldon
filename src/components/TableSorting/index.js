@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -8,6 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
+import * as S from './styles';
 
 const createData = (title, time, earned) => {
   return { title, time, earned };
@@ -49,8 +49,8 @@ const stableSort = (array, comparator) => {
 
 const headCells = [
   { id: 'last purchased', numeric: false, disablePadding: true, label: 'Last Purchased' },
-  { id: 'when', numeric: false, disablePadding: false, label: 'When' },
-  { id: 'earned', numeric: false, disablePadding: false, label: 'Earned' },
+  { id: 'when', numeric: true, disablePadding: false, label: 'When' },
+  { id: 'earned', numeric: true, disablePadding: false, label: 'Earned' },
 ];
 
 const EnhancedTableHead = (props) => {
@@ -60,10 +60,11 @@ const EnhancedTableHead = (props) => {
   };
 
   return (
-    <TableHead>
-      <TableRow>
+    <TableHead className={classes.header}>
+      <TableRow className={classes.row}>
         {headCells.map((headCell) => (
           <TableCell
+            className={classes.headerText}
             key={headCell.id}
             align={headCell.numeric ? 'right' : 'left'}
             padding={headCell.disablePadding ? 'none' : 'default'}
@@ -96,27 +97,10 @@ EnhancedTableHead.propTypes = {
   orderBy: PropTypes.string.isRequired,
 };
 
-const useStyles = makeStyles(() => ({
-  root: {
-    width: '100%',
-  },
-  visuallyHidden: {
-    border: 0,
-    clip: 'rect(0 0 0 0)',
-    height: 1,
-    margin: -1,
-    overflow: 'hidden',
-    padding: 0,
-    position: 'absolute',
-    top: 20,
-    width: 1,
-  },
-}));
-
 export const TableSorting = () => {
-  const classes = useStyles();
+  const classes = S.useStyles();
   const [order, setOrder] = React.useState('asc');
-  const [orderBy, setOrderBy] = React.useState('calories');
+  const [orderBy, setOrderBy] = React.useState('last purchased');
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
@@ -139,11 +123,15 @@ export const TableSorting = () => {
             {stableSort(rows, getComparator(order, orderBy)).map((row) => {
               return (
                 <TableRow key={row.title}>
-                  <TableCell component="th" scope="row" padding="none">
+                  <TableCell className={classes.text} component="th" scope="row" padding="none" align="left">
                     {row.title}
                   </TableCell>
-                  <TableCell align="right">{row.time}</TableCell>
-                  <TableCell align="right">{row.earned}</TableCell>
+                  <TableCell className={classes.text} align="right">
+                    {row.time}
+                  </TableCell>
+                  <TableCell className={classes.earnedText} align="right">
+                    {row.earned}
+                  </TableCell>
                 </TableRow>
               );
             })}

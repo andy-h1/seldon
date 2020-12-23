@@ -42,7 +42,6 @@ const a11yProps = (index) => {
 };
 
 const Wrapper = styled(Grid)({
-  border: '1px solid red',
   margin: '0 1em 0 0',
 });
 

@@ -1,17 +1,11 @@
 import React from 'react';
-import { Grid, makeStyles } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { SidePanel } from '../SidePanel';
 import { Header } from '../Header';
 import * as S from './styles';
 
-const useStyles = makeStyles(() => ({
-  root: {
-    flexGrow: 1,
-  },
-}));
-
 const App = () => {
-  const classes = useStyles();
+  const classes = S.useStyles();
   return (
     <>
       <S.GlobalStyle />

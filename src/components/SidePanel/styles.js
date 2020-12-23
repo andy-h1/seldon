@@ -8,8 +8,6 @@ export const Button = styled.button`
   border: 1px solid ${colours.lightGrey};
   color: ${colours.darkGrey};
   font-size: 24px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
   border-radius: 25px;
   padding: 0.5em;
   width: 250px;
@@ -27,7 +25,6 @@ export const useStyles = makeStyles(() => ({
     width: 'fit-content',
     height: '100vh',
     color: `${colours.white}`,
-    border: '1px solid blue',
   },
   icon: {
     color: `${colours.grey}`,

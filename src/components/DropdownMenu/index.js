@@ -1,29 +1,16 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import { arrayOf, shape, string } from 'prop-types';
-
-const useStyles = makeStyles((theme) => ({
-  formControl: {
-    margin: 0,
-    width: 'fit-content',
-    height: '10px',
-    minWidth: 100,
-    color: 'white',
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(0),
-  },
-}));
+import * as S from './styles';
 
 export const DropdownMenu = ({ props }) => {
   const { values, name } = props;
   const { one, two, three } = values;
-  const classes = useStyles();
+  const classes = S.useStyles();
 
   return (
     <div>

@@ -1,11 +1,21 @@
-import styled from 'styled-components';
-import { makeStyles, TableCell } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import { colours } from '../../tokens';
 
 export const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
     margin: '1em 0',
+  },
+  visuallyHidden: {
+    border: 0,
+    clip: 'rect(0 0 0 0)',
+    height: 1,
+    margin: -1,
+    overflow: 'hidden',
+    padding: 0,
+    position: 'absolute',
+    top: 20,
+    width: 1,
   },
   table: {
     minWidth: 460,
@@ -24,14 +34,8 @@ export const useStyles = makeStyles(() => ({
     color: 'white',
     fontSize: '16px',
   },
-  totalText: {
-    color: `${colours.orange}`,
+  earnedText: {
+    color: `${colours.green}`,
     fontSize: '16px',
   },
 }));
-
-export const Cell = styled(TableCell)`
-  color: white;
-  font-size: 19px;
-  font-weight: 'bold';
-`;

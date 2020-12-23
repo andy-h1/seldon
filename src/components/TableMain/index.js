@@ -137,7 +137,7 @@ const useStyles = makeStyles(() => ({
 export const TableMain = () => {
   const classes = useStyles();
   const [order, setOrder] = React.useState('asc');
-  const [orderBy, setOrderBy] = React.useState('calories');
+  const [orderBy, setOrderBy] = React.useState('efficiency');
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
