@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@material-ui/core/styles';
-import { AppBar, Tabs, Tab, Typography, Grid } from '@material-ui/core';
+import { AppBar, Tabs, Tab, Typography, Grid, withStyles } from '@material-ui/core';
 import { TableMain } from '../TableMain';
 import { ProjectViews } from '../ProjectViews';
 import { HeaderDashboard } from '../HeaderDashboard';
@@ -52,6 +52,18 @@ const Header = styled(AppBar)({
   borderBottom: `2px solid ${colours.lightGrey}`,
 });
 
+const StyledTabs = withStyles({
+  indicator: {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    backgroundColor: 'transparent',
+    '& > span': {
+      width: '100%',
+      backgroundColor: `${colours.white}`,
+    },
+  },
+})((props) => <Tabs {...props} TabIndicatorProps={{ children: <span /> }} />);
+
 const StyledTab = styled(Tab)({
   textTransform: 'capitalize',
   fontWeight: 'bold',
@@ -67,14 +79,14 @@ export const NavBar = () => {
   return (
     <Wrapper>
       <Header position="static" elevation={0}>
-        <Tabs variant="standard" value={value} onChange={handleChange} aria-label="dashboard tabs">
+        <StyledTabs variant="standard" value={value} onChange={handleChange} aria-label="dashboard tabs">
           <StyledTab label="Analyze" {...a11yProps(0)} />
           <StyledTab label="My campaigns" {...a11yProps(1)} />
           <StyledTab label="Configure" {...a11yProps(2)} />
           <StyledTab label="Customize" {...a11yProps(3)} />
           <StyledTab label="Research" {...a11yProps(4)} />
           <StyledTab label="Inspect" {...a11yProps(5)} />
-        </Tabs>
+        </StyledTabs>
       </Header>
       <TabPanel value={value} index={0}>
         <HeaderDashboard />

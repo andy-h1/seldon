@@ -8,6 +8,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
+import styled from 'styled-components';
 
 const createData = (campaign, efficiency, plays, finished, likes, comments) => {
   return { campaign, efficiency, plays, finished, likes, comments };
@@ -103,10 +104,6 @@ const useStyles = makeStyles(() => ({
     width: '100%',
     margin: '1em 0',
   },
-  table: {
-    // width: '100%',
-    fontSize: 18,
-  },
   visuallyHidden: {
     border: 0,
     clip: 'rect(0 0 0 0)',
@@ -119,6 +116,13 @@ const useStyles = makeStyles(() => ({
     width: 1,
   },
 }));
+
+export const TableHeader = styled(TableCell)`
+  th {
+    color: white;
+    font-weight: 600;
+  }
+`;
 
 export const TableMain = () => {
   const classes = useStyles();
@@ -146,9 +150,9 @@ export const TableMain = () => {
             {stableSort(rows, getComparator(order, orderBy)).map((row) => {
               return (
                 <TableRow key={row.campaign}>
-                  <TableCell component="th" scope="row" padding="none">
+                  <TableHeader component="th" scope="row" padding="none">
                     {row.campaign}
-                  </TableCell>
+                  </TableHeader>
                   <TableCell align="right">{row.efficiency}</TableCell>
                   <TableCell align="right">{row.plays}</TableCell>
                   <TableCell align="right">{row.finished}</TableCell>
