@@ -254,10 +254,10 @@ exports[`App component should render 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7"
     >
       <div
-        class="MuiGrid-root sc-fFubgz giEIwB"
+        class="MuiGrid-root sc-idOhPF iIGIfb"
       >
         <header
-          class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary sc-fodVxV kqVPhj MuiPaper-elevation0"
+          class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary sc-bkzZxe bquZNO MuiPaper-elevation0"
         >
           <div
             class="MuiTabs-root"
@@ -274,7 +274,7 @@ exports[`App component should render 1`] = `
                 <button
                   aria-controls="nav-tabpanel-0"
                   aria-selected="true"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-bkzZxe prBuV Mui-selected"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-dIUggk jOwDSi Mui-selected"
                   id="nav-tab-0"
                   role="tab"
                   tabindex="0"
@@ -292,7 +292,7 @@ exports[`App component should render 1`] = `
                 <button
                   aria-controls="nav-tabpanel-1"
                   aria-selected="false"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-bkzZxe prBuV"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-dIUggk jOwDSi"
                   id="nav-tab-1"
                   role="tab"
                   tabindex="-1"
@@ -310,7 +310,7 @@ exports[`App component should render 1`] = `
                 <button
                   aria-controls="nav-tabpanel-2"
                   aria-selected="false"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-bkzZxe prBuV"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-dIUggk jOwDSi"
                   id="nav-tab-2"
                   role="tab"
                   tabindex="-1"
@@ -328,7 +328,7 @@ exports[`App component should render 1`] = `
                 <button
                   aria-controls="nav-tabpanel-3"
                   aria-selected="false"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-bkzZxe prBuV"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-dIUggk jOwDSi"
                   id="nav-tab-3"
                   role="tab"
                   tabindex="-1"
@@ -346,7 +346,7 @@ exports[`App component should render 1`] = `
                 <button
                   aria-controls="nav-tabpanel-4"
                   aria-selected="false"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-bkzZxe prBuV"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-dIUggk jOwDSi"
                   id="nav-tab-4"
                   role="tab"
                   tabindex="-1"
@@ -364,7 +364,7 @@ exports[`App component should render 1`] = `
                 <button
                   aria-controls="nav-tabpanel-5"
                   aria-selected="false"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-bkzZxe prBuV"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit sc-dIUggk jOwDSi"
                   id="nav-tab-5"
                   role="tab"
                   tabindex="-1"
@@ -400,11 +400,11 @@ exports[`App component should render 1`] = `
             <div
               class="sc-eCssSg ecWuHy"
             >
-              <div
+              <p
                 class="MuiTypography-root MuiTypography-h4"
               >
                 Dashboard
-              </div>
+              </p>
               <div
                 class="sc-jSgupP kUrhbU"
               >
@@ -464,67 +464,67 @@ exports[`App component should render 1`] = `
               </div>
             </div>
             <div
-              class="sc-hBEYos dGcEPF"
+              class="sc-fFubgz kNvVfF"
             >
               <div
-                class="sc-dQppl iDzKbj"
+                class="sc-kstrdz zFmHW"
               >
-                <h3
-                  class="sc-bqyKva cxqEAq"
+                <p
+                  class="sc-hBEYos byafJw"
                 >
                   Played
-                </h3>
+                </p>
                 <p
-                  class="sc-kstrdz bJFqAi"
+                  class="sc-fodVxV cGdCgn"
                 >
                   1254
                 </p>
               </div>
               <div
-                class="sc-dQppl iDzKbj"
+                class="sc-kstrdz zFmHW"
               >
-                <h3
-                  class="sc-bqyKva cxqEAq"
+                <p
+                  class="sc-hBEYos byafJw"
                 >
                   Finished
-                </h3>
+                </p>
                 <p
-                  class="sc-kstrdz bJFqAi"
+                  class="sc-fodVxV cGdCgn"
                 >
                   809
                 </p>
               </div>
               <div
-                class="sc-dQppl iDzKbj"
+                class="sc-kstrdz zFmHW"
               >
-                <h3
-                  class="sc-bqyKva cxqEAq"
+                <p
+                  class="sc-hBEYos byafJw"
                 >
                   Likes
-                </h3>
+                </p>
                 <p
-                  class="sc-kstrdz bJFqAi"
+                  class="sc-fodVxV cGdCgn"
                 >
                   114
                 </p>
               </div>
               <div
-                class="sc-dQppl iDzKbj"
+                class="sc-kstrdz zFmHW"
               >
-                <h3
-                  class="sc-bqyKva cxqEAq"
+                <p
+                  class="sc-hBEYos byafJw"
                 >
                   Comments
-                </h3>
+                </p>
                 <p
-                  class="sc-kstrdz bJFqAi"
+                  class="sc-fodVxV cGdCgn"
                 >
                   27
                 </p>
               </div>
             </div>
             <div
-              class="sc-dlfnbm cfBgSH"
+              class="sc-dlfnbm keEUuQ"
             >
               <div
                 class="sc-hKgILt ezlxUD"
@@ -551,7 +551,7 @@ exports[`App component should render 1`] = `
               </div>
               <svg
                 height="300"
-                width="512"
+                width="542.72"
               >
                 <g
                   transform="translate(50, 50)"
@@ -568,7 +568,7 @@ exports[`App component should render 1`] = `
                   >
                     <path
                       class="domain"
-                      d="M0.5,6V0.5H412.5V6"
+                      d="M0.5,6V0.5H443.22V6"
                       stroke="currentColor"
                     />
                     <g
@@ -591,7 +591,7 @@ exports[`App component should render 1`] = `
                     <g
                       class="tick"
                       opacity="1"
-                      transform="translate(41.7,0)"
+                      transform="translate(44.772000000000006,0)"
                     >
                       <line
                         stroke="currentColor"
@@ -608,7 +608,7 @@ exports[`App component should render 1`] = `
                     <g
                       class="tick"
                       opacity="1"
-                      transform="translate(82.9,0)"
+                      transform="translate(89.04400000000001,0)"
                     >
                       <line
                         stroke="currentColor"
@@ -625,7 +625,7 @@ exports[`App component should render 1`] = `
                     <g
                       class="tick"
                       opacity="1"
-                      transform="translate(124.1,0)"
+                      transform="translate(133.316,0)"
                     >
                       <line
                         stroke="currentColor"
@@ -642,7 +642,7 @@ exports[`App component should render 1`] = `
                     <g
                       class="tick"
                       opacity="1"
-                      transform="translate(165.3,0)"
+                      transform="translate(177.58800000000002,0)"
                     >
                       <line
                         stroke="currentColor"
@@ -659,7 +659,7 @@ exports[`App component should render 1`] = `
                     <g
                       class="tick"
                       opacity="1"
-                      transform="translate(206.5,0)"
+                      transform="translate(221.86,0)"
                     >
                       <line
                         stroke="currentColor"
@@ -676,7 +676,7 @@ exports[`App component should render 1`] = `
                     <g
                       class="tick"
                       opacity="1"
-                      transform="translate(247.7,0)"
+                      transform="translate(266.132,0)"
                     >
                       <line
                         stroke="currentColor"
@@ -693,7 +693,7 @@ exports[`App component should render 1`] = `
                     <g
                       class="tick"
                       opacity="1"
-                      transform="translate(288.9,0)"
+                      transform="translate(310.404,0)"
                     >
                       <line
                         stroke="currentColor"
@@ -710,7 +710,7 @@ exports[`App component should render 1`] = `
                     <g
                       class="tick"
                       opacity="1"
-                      transform="translate(330.1,0)"
+                      transform="translate(354.67600000000004,0)"
                     >
                       <line
                         stroke="currentColor"
@@ -727,7 +727,7 @@ exports[`App component should render 1`] = `
                     <g
                       class="tick"
                       opacity="1"
-                      transform="translate(371.3,0)"
+                      transform="translate(398.94800000000004,0)"
                     >
                       <line
                         stroke="currentColor"
@@ -744,7 +744,7 @@ exports[`App component should render 1`] = `
                     <g
                       class="tick"
                       opacity="1"
-                      transform="translate(412.5,0)"
+                      transform="translate(443.22,0)"
                     >
                       <line
                         stroke="currentColor"
@@ -768,7 +768,7 @@ exports[`App component should render 1`] = `
                   >
                     <path
                       class="domain"
-                      d="M412,200.5H0.5V0.5H412"
+                      d="M442.72,200.5H0.5V0.5H442.72"
                       stroke="currentColor"
                     />
                     <g
@@ -778,7 +778,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -793,7 +793,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -808,7 +808,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -823,7 +823,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -838,7 +838,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -853,7 +853,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -868,7 +868,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -883,7 +883,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -898,7 +898,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -913,7 +913,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -928,7 +928,7 @@ exports[`App component should render 1`] = `
                     >
                       <line
                         stroke="currentColor"
-                        x2="412"
+                        x2="442.72"
                       />
                       <text
                         dy="0.32em"
@@ -1138,11 +1138,11 @@ exports[`App component should render 1`] = `
                   </g>
                   <path
                     class="area"
-                    d="M0,55.48646368388888C6.866666666666667,127.25621116666886,13.733333333333334,199.02595864944885,20.6,199.02595864944885C27.46666666666667,199.02595864944885,34.333333333333336,134.18842425313602,41.2,134.18842425313602C48.06666666666667,134.18842425313602,54.93333333333333,186.10029099511297,61.8,186.10029099511297C68.66666666666667,186.10029099511297,75.53333333333333,162.41766144392236,82.4,162.41766144392236C89.26666666666667,162.41766144392236,96.13333333333334,185.63464932222854,103,185.63464932222854C109.86666666666666,185.63464932222854,116.73333333333333,141.3610128610603,123.6,115.80991385669934C130.46666666666667,90.25881485233839,137.33333333333331,32.328055296062885,144.2,32.328055296062885C151.06666666666666,32.328055296062885,157.93333333333334,187.17434920540865,164.8,187.17434920540865C171.66666666666669,187.17434920540865,178.53333333333333,158.96511571199306,185.4,144.2069674093907C192.26666666666668,129.44881910678833,199.13333333333333,116.41619140557094,206,98.62545938979449C212.86666666666667,80.834727374018,219.73333333333335,37.46257531473185,226.60000000000002,37.46257531473185C233.46666666666667,37.46257531473185,240.33333333333334,110.25935108693614,247.2,123.38007704110268C254.06666666666666,136.50080299526925,260.93333333333334,143.06116597235254,267.8,143.06116597235254C274.6666666666667,143.06116597235254,281.5333333333333,139.3675273238797,288.4,131.98025002693404C295.26666666666665,124.59297272998836,302.1333333333333,11.027191951834837,309,11.027191951834837C315.8666666666667,11.027191951834837,322.73333333333335,104.79355736526337,329.6,108.34512010633506C336.4666666666667,111.89668284740674,343.3333333333333,113.67246421794258,350.2,113.67246421794258C357.06666666666666,113.67246421794258,363.93333333333334,46.180262706139615,370.8,46.180262706139615C377.6666666666667,46.180262706139615,384.5333333333333,86.95313887468456,391.4,101.38637084272139C398.26666666666665,115.81960281075827,405.1333333333333,124.2996286625595,412,132.77965451436071L412,200C405.1333333333333,200,398.26666666666665,200,391.4,200C384.5333333333333,200,377.6666666666667,200,370.8,200C363.93333333333334,200,357.06666666666666,200,350.2,200C343.3333333333333,200,336.4666666666667,200,329.6,200C322.73333333333335,200,315.8666666666667,200,309,200C302.1333333333333,200,295.26666666666665,200,288.4,200C281.5333333333333,200,274.6666666666667,200,267.8,200C260.93333333333334,200,254.06666666666666,200,247.2,200C240.33333333333334,200,233.46666666666667,200,226.60000000000002,200C219.73333333333335,200,212.86666666666667,200,206,200C199.13333333333333,200,192.26666666666668,200,185.4,200C178.53333333333333,200,171.66666666666669,200,164.8,200C157.93333333333334,200,151.06666666666666,200,144.2,200C137.33333333333331,200,130.46666666666667,200,123.6,200C116.73333333333333,200,109.86666666666666,200,103,200C96.13333333333334,200,89.26666666666667,200,82.4,200C75.53333333333333,200,68.66666666666667,200,61.8,200C54.93333333333333,200,48.06666666666667,200,41.2,200C34.333333333333336,200,27.46666666666667,200,20.6,200C13.733333333333334,200,6.866666666666667,200,0,200Z"
+                    d="M0,55.48646368388888C7.378666666666668,127.25621116666886,14.757333333333335,199.02595864944885,22.136000000000003,199.02595864944885C29.51466666666667,199.02595864944885,36.89333333333334,134.18842425313602,44.272000000000006,134.18842425313602C51.65066666666667,134.18842425313602,59.029333333333334,186.10029099511297,66.408,186.10029099511297C73.78666666666668,186.10029099511297,81.16533333333334,162.41766144392236,88.54400000000001,162.41766144392236C95.92266666666667,162.41766144392236,103.30133333333335,185.63464932222854,110.68,185.63464932222854C118.05866666666667,185.63464932222854,125.43733333333334,141.3610128610603,132.816,115.80991385669934C140.19466666666668,90.25881485233839,147.57333333333332,32.328055296062885,154.952,32.328055296062885C162.33066666666667,32.328055296062885,169.70933333333335,187.17434920540865,177.08800000000002,187.17434920540865C184.4666666666667,187.17434920540865,191.84533333333334,158.96511571199306,199.22400000000002,144.2069674093907C206.6026666666667,129.44881910678833,213.98133333333334,116.41619140557094,221.36,98.62545938979449C228.7386666666667,80.834727374018,236.11733333333336,37.46257531473185,243.49600000000004,37.46257531473185C250.87466666666668,37.46257531473185,258.25333333333333,110.25935108693614,265.632,123.38007704110268C273.0106666666667,136.50080299526925,280.38933333333335,143.06116597235254,287.76800000000003,143.06116597235254C295.1466666666667,143.06116597235254,302.5253333333333,139.3675273238797,309.904,131.98025002693404C317.28266666666667,124.59297272998836,324.66133333333335,11.027191951834837,332.04,11.027191951834837C339.4186666666667,11.027191951834837,346.79733333333337,104.79355736526337,354.17600000000004,108.34512010633506C361.5546666666667,111.89668284740674,368.93333333333334,113.67246421794258,376.312,113.67246421794258C383.6906666666667,113.67246421794258,391.06933333333336,46.180262706139615,398.44800000000004,46.180262706139615C405.8266666666667,46.180262706139615,413.20533333333333,86.95313887468456,420.584,101.38637084272139C427.9626666666667,115.81960281075827,435.34133333333335,124.29962866255948,442.72,132.77965451436071L442.72,200C435.34133333333335,200,427.9626666666667,200,420.584,200C413.20533333333333,200,405.8266666666667,200,398.44800000000004,200C391.06933333333336,200,383.6906666666667,200,376.312,200C368.93333333333334,200,361.5546666666667,200,354.17600000000004,200C346.79733333333337,200,339.4186666666667,200,332.04,200C324.66133333333335,200,317.28266666666667,200,309.904,200C302.5253333333333,200,295.1466666666667,200,287.76800000000003,200C280.38933333333335,200,273.0106666666667,200,265.632,200C258.25333333333333,200,250.87466666666668,200,243.49600000000004,200C236.11733333333336,200,228.7386666666667,200,221.36,200C213.98133333333334,200,206.6026666666667,200,199.22400000000002,200C191.84533333333334,200,184.4666666666667,200,177.08800000000002,200C169.70933333333335,200,162.33066666666667,200,154.952,200C147.57333333333332,200,140.19466666666668,200,132.816,200C125.43733333333334,200,118.05866666666667,200,110.68,200C103.30133333333335,200,95.92266666666667,200,88.54400000000001,200C81.16533333333334,200,73.78666666666668,200,66.408,200C59.029333333333334,200,51.65066666666667,200,44.272000000000006,200C36.89333333333334,200,29.51466666666667,200,22.136000000000003,200C14.757333333333335,200,7.378666666666668,200,0,200Z"
                   />
                   <path
                     class="line"
-                    d="M0,55.48646368388888C6.866666666666667,127.25621116666886,13.733333333333334,199.02595864944885,20.6,199.02595864944885C27.46666666666667,199.02595864944885,34.333333333333336,134.18842425313602,41.2,134.18842425313602C48.06666666666667,134.18842425313602,54.93333333333333,186.10029099511297,61.8,186.10029099511297C68.66666666666667,186.10029099511297,75.53333333333333,162.41766144392236,82.4,162.41766144392236C89.26666666666667,162.41766144392236,96.13333333333334,185.63464932222854,103,185.63464932222854C109.86666666666666,185.63464932222854,116.73333333333333,141.3610128610603,123.6,115.80991385669934C130.46666666666667,90.25881485233839,137.33333333333331,32.328055296062885,144.2,32.328055296062885C151.06666666666666,32.328055296062885,157.93333333333334,187.17434920540865,164.8,187.17434920540865C171.66666666666669,187.17434920540865,178.53333333333333,158.96511571199306,185.4,144.2069674093907C192.26666666666668,129.44881910678833,199.13333333333333,116.41619140557094,206,98.62545938979449C212.86666666666667,80.834727374018,219.73333333333335,37.46257531473185,226.60000000000002,37.46257531473185C233.46666666666667,37.46257531473185,240.33333333333334,110.25935108693614,247.2,123.38007704110268C254.06666666666666,136.50080299526925,260.93333333333334,143.06116597235254,267.8,143.06116597235254C274.6666666666667,143.06116597235254,281.5333333333333,139.3675273238797,288.4,131.98025002693404C295.26666666666665,124.59297272998836,302.1333333333333,11.027191951834837,309,11.027191951834837C315.8666666666667,11.027191951834837,322.73333333333335,104.79355736526337,329.6,108.34512010633506C336.4666666666667,111.89668284740674,343.3333333333333,113.67246421794258,350.2,113.67246421794258C357.06666666666666,113.67246421794258,363.93333333333334,46.180262706139615,370.8,46.180262706139615C377.6666666666667,46.180262706139615,384.5333333333333,86.95313887468456,391.4,101.38637084272139C398.26666666666665,115.81960281075827,405.1333333333333,124.2996286625595,412,132.77965451436071"
+                    d="M0,55.48646368388888C7.378666666666668,127.25621116666886,14.757333333333335,199.02595864944885,22.136000000000003,199.02595864944885C29.51466666666667,199.02595864944885,36.89333333333334,134.18842425313602,44.272000000000006,134.18842425313602C51.65066666666667,134.18842425313602,59.029333333333334,186.10029099511297,66.408,186.10029099511297C73.78666666666668,186.10029099511297,81.16533333333334,162.41766144392236,88.54400000000001,162.41766144392236C95.92266666666667,162.41766144392236,103.30133333333335,185.63464932222854,110.68,185.63464932222854C118.05866666666667,185.63464932222854,125.43733333333334,141.3610128610603,132.816,115.80991385669934C140.19466666666668,90.25881485233839,147.57333333333332,32.328055296062885,154.952,32.328055296062885C162.33066666666667,32.328055296062885,169.70933333333335,187.17434920540865,177.08800000000002,187.17434920540865C184.4666666666667,187.17434920540865,191.84533333333334,158.96511571199306,199.22400000000002,144.2069674093907C206.6026666666667,129.44881910678833,213.98133333333334,116.41619140557094,221.36,98.62545938979449C228.7386666666667,80.834727374018,236.11733333333336,37.46257531473185,243.49600000000004,37.46257531473185C250.87466666666668,37.46257531473185,258.25333333333333,110.25935108693614,265.632,123.38007704110268C273.0106666666667,136.50080299526925,280.38933333333335,143.06116597235254,287.76800000000003,143.06116597235254C295.1466666666667,143.06116597235254,302.5253333333333,139.3675273238797,309.904,131.98025002693404C317.28266666666667,124.59297272998836,324.66133333333335,11.027191951834837,332.04,11.027191951834837C339.4186666666667,11.027191951834837,346.79733333333337,104.79355736526337,354.17600000000004,108.34512010633506C361.5546666666667,111.89668284740674,368.93333333333334,113.67246421794258,376.312,113.67246421794258C383.6906666666667,113.67246421794258,391.06933333333336,46.180262706139615,398.44800000000004,46.180262706139615C405.8266666666667,46.180262706139615,413.20533333333333,86.95313887468456,420.584,101.38637084272139C427.9626666666667,115.81960281075827,435.34133333333335,124.29962866255948,442.72,132.77965451436071"
                   />
                   <circle
                     class="dot"
@@ -1152,121 +1152,121 @@ exports[`App component should render 1`] = `
                   />
                   <circle
                     class="dot"
-                    cx="20.6"
+                    cx="22.136000000000003"
                     cy="199.02595864944885"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="41.2"
+                    cx="44.272000000000006"
                     cy="134.18842425313602"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="61.8"
+                    cx="66.408"
                     cy="186.10029099511297"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="82.4"
+                    cx="88.54400000000001"
                     cy="162.41766144392236"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="103"
+                    cx="110.68"
                     cy="185.63464932222854"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="123.6"
+                    cx="132.816"
                     cy="115.80991385669934"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="144.2"
+                    cx="154.952"
                     cy="32.328055296062885"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="164.8"
+                    cx="177.08800000000002"
                     cy="187.17434920540865"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="185.4"
+                    cx="199.22400000000002"
                     cy="144.2069674093907"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="206"
+                    cx="221.36"
                     cy="98.62545938979449"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="226.60000000000002"
+                    cx="243.49600000000004"
                     cy="37.46257531473185"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="247.2"
+                    cx="265.632"
                     cy="123.38007704110268"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="267.8"
+                    cx="287.76800000000003"
                     cy="143.06116597235254"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="288.4"
+                    cx="309.904"
                     cy="131.98025002693404"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="309"
+                    cx="332.04"
                     cy="11.027191951834837"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="329.6"
+                    cx="354.17600000000004"
                     cy="108.34512010633506"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="350.2"
+                    cx="376.312"
                     cy="113.67246421794258"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="370.8"
+                    cx="398.44800000000004"
                     cy="46.180262706139615"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="391.4"
+                    cx="420.584"
                     cy="101.38637084272139"
                     r="5"
                   />
                   <circle
                     class="dot"
-                    cx="412"
+                    cx="442.72"
                     cy="132.77965451436071"
                     r="5"
                   />
@@ -1275,7 +1275,7 @@ exports[`App component should render 1`] = `
             </div>
             <div>
               <div
-                class="sc-iqHYGH ruWHM"
+                class="sc-dQppl fJkqVz"
               >
                 <div
                   class="MuiTypography-root MuiTypography-h5"
@@ -1298,7 +1298,7 @@ exports[`App component should render 1`] = `
                 </button>
               </div>
               <div
-                class="sc-crrsfI fFvZKZ"
+                class="sc-bqyKva hixSNU"
               >
                 <div
                   class="sc-kEjbxe dcWPeh"
@@ -1316,7 +1316,7 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <circle
-                      class="sc-fubCfw iQbkDP"
+                      class="sc-crrsfI glKayS"
                       color="red"
                       cx="50"
                       cy="50"
@@ -1324,12 +1324,26 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <text
-                      class="sc-jrAGrp eKaOwr"
+                      class="sc-iqHYGH cZcmda"
                       x="50%"
                       y="50%"
                     >
                       895
                     </text>
+                    <def>
+                      <lineargradient
+                        id="donut-fill"
+                      >
+                        <stop
+                          offset="0%"
+                          stop-color="#cbf07d"
+                        />
+                        <stop
+                          offset="100%"
+                          stop-color="#80e88c"
+                        />
+                      </lineargradient>
+                    </def>
                   </svg>
                   <p
                     class="MuiTypography-root MuiTypography-body1"
@@ -1362,7 +1376,7 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <circle
-                      class="sc-fubCfw eEoCXi"
+                      class="sc-crrsfI dvVIoE"
                       color="blue"
                       cx="50"
                       cy="50"
@@ -1370,12 +1384,26 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <text
-                      class="sc-jrAGrp eKaOwr"
+                      class="sc-iqHYGH cZcmda"
                       x="50%"
                       y="50%"
                     >
                       284
                     </text>
+                    <def>
+                      <lineargradient
+                        id="donut-fill"
+                      >
+                        <stop
+                          offset="0%"
+                          stop-color="#cbf07d"
+                        />
+                        <stop
+                          offset="100%"
+                          stop-color="#80e88c"
+                        />
+                      </lineargradient>
+                    </def>
                   </svg>
                   <p
                     class="MuiTypography-root MuiTypography-body1"
@@ -1408,7 +1436,7 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <circle
-                      class="sc-fubCfw ciZtla"
+                      class="sc-crrsfI hhaJhX"
                       color="green"
                       cx="50"
                       cy="50"
@@ -1416,12 +1444,26 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <text
-                      class="sc-jrAGrp eKaOwr"
+                      class="sc-iqHYGH cZcmda"
                       x="50%"
                       y="50%"
                     >
                       23
                     </text>
+                    <def>
+                      <lineargradient
+                        id="donut-fill"
+                      >
+                        <stop
+                          offset="0%"
+                          stop-color="#cbf07d"
+                        />
+                        <stop
+                          offset="100%"
+                          stop-color="#80e88c"
+                        />
+                      </lineargradient>
+                    </def>
                   </svg>
                   <p
                     class="MuiTypography-root MuiTypography-body1"
@@ -1454,7 +1496,7 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <circle
-                      class="sc-fubCfw hdGpqF"
+                      class="sc-crrsfI kMXzed"
                       color="pink"
                       cx="50"
                       cy="50"
@@ -1462,12 +1504,26 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <text
-                      class="sc-jrAGrp eKaOwr"
+                      class="sc-iqHYGH cZcmda"
                       x="50%"
                       y="50%"
                     >
                       1
                     </text>
+                    <def>
+                      <lineargradient
+                        id="donut-fill"
+                      >
+                        <stop
+                          offset="0%"
+                          stop-color="#cbf07d"
+                        />
+                        <stop
+                          offset="100%"
+                          stop-color="#80e88c"
+                        />
+                      </lineargradient>
+                    </def>
                   </svg>
                   <p
                     class="MuiTypography-root MuiTypography-body1"
@@ -1500,7 +1556,7 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <circle
-                      class="sc-fubCfw knvmjd"
+                      class="sc-crrsfI iAxcKY"
                       color="purple"
                       cx="50"
                       cy="50"
@@ -1508,12 +1564,26 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <text
-                      class="sc-jrAGrp eKaOwr"
+                      class="sc-iqHYGH cZcmda"
                       x="50%"
                       y="50%"
                     >
                       8
                     </text>
+                    <def>
+                      <lineargradient
+                        id="donut-fill"
+                      >
+                        <stop
+                          offset="0%"
+                          stop-color="#cbf07d"
+                        />
+                        <stop
+                          offset="100%"
+                          stop-color="#80e88c"
+                        />
+                      </lineargradient>
+                    </def>
                   </svg>
                   <p
                     class="MuiTypography-root MuiTypography-body1"
