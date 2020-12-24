@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { seedData } from './data';
@@ -18,7 +16,7 @@ export const LineGraph = () => {
 
   const drawChart = () => {
     const margin = { top: 50, right: 50, bottom: 50, left: 50 };
-    const width = window.innerWidth * 0.6 - margin.left - margin.right;
+    const width = window.innerWidth * 0.5 - margin.left - margin.right;
     const height = 300 - margin.top - margin.bottom;
 
     const xScale = d3.scaleLinear().domain([dataSet[0].x, latestXValue]).range([0, width]);
@@ -27,13 +25,13 @@ export const LineGraph = () => {
 
     const line = d3
       .line()
-      .x((d, i) => xScale(d.x))
+      .x((d) => xScale(d.x))
       .y((d) => yScale(d.y))
       .curve(d3.curveMonotoneX);
 
     const area = d3
       .area()
-      .x((d, i) => xScale(d.x))
+      .x((d) => xScale(d.x))
       .y0(height)
       .y1((d) => yScale(d.y))
       .curve(d3.curveMonotoneX);

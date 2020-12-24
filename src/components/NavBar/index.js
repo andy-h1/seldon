@@ -1,8 +1,7 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { styled } from '@material-ui/core/styles';
-import { Tabs, Tab, Typography, withStyles } from '@material-ui/core';
+import { Tabs, Typography, withStyles } from '@material-ui/core';
 import { TableMain } from '../TableMain';
 import { ProjectViews } from '../ProjectViews';
 import { HeaderDashboard } from '../HeaderDashboard';
@@ -42,29 +41,16 @@ const a11yProps = (index) => {
   };
 };
 
-// const Header = styled(AppBar)({
-//   backgroundColor: `${colours.darkGrey}`,
-//   color: `${colours.white}`,
-//   borderBottom: `2px solid ${colours.lightGrey}`,
-// });
-
 const StyledTabs = withStyles({
   indicator: {
     display: 'flex',
-    justifyContent: 'flex-start',
-    backgroundColor: 'transparent',
+    justifyContent: 'center',
     '& > span': {
       width: '100%',
       backgroundColor: `${colours.white}`,
     },
   },
 })((props) => <Tabs {...props} TabIndicatorProps={{ children: <span /> }} />);
-
-const StyledTab = styled(Tab)({
-  textTransform: 'capitalize',
-  fontWeight: 'bold',
-  fontSize: '16px',
-});
 
 export const NavBar = () => {
   const [value, setValue] = React.useState(0);
@@ -76,12 +62,12 @@ export const NavBar = () => {
     <S.Wrapper>
       <S.Header position="static" elevation={0}>
         <StyledTabs variant="standard" value={value} onChange={handleChange} aria-label="dashboard tabs">
-          <StyledTab label="Analyze" {...a11yProps(0)} />
-          <StyledTab label="My campaigns" {...a11yProps(1)} />
-          <StyledTab label="Configure" {...a11yProps(2)} />
-          <StyledTab label="Customize" {...a11yProps(3)} />
-          <StyledTab label="Research" {...a11yProps(4)} />
-          <StyledTab label="Inspect" {...a11yProps(5)} />
+          <S.StyledTab label="Analyze" {...a11yProps(0)} />
+          <S.StyledTab label="My campaigns" {...a11yProps(1)} />
+          <S.StyledTab label="Configure" {...a11yProps(2)} />
+          <S.StyledTab label="Customize" {...a11yProps(3)} />
+          <S.StyledTab label="Research" {...a11yProps(4)} />
+          <S.StyledTab label="Inspect" {...a11yProps(5)} />
         </StyledTabs>
       </S.Header>
       <TabPanel value={value} index={0}>

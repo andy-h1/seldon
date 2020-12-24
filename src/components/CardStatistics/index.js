@@ -1,9 +1,8 @@
 import React from 'react';
-import { shape, string, number } from 'prop-types';
+import { string, number } from 'prop-types';
 import * as S from './styles';
 
-export const CardStatistics = ({ data }) => {
-  const { statistic, title } = data;
+export const CardStatistics = ({ title, statistic }) => {
   return (
     <S.CardWrapper>
       <S.Title>{title}</S.Title>
@@ -13,8 +12,9 @@ export const CardStatistics = ({ data }) => {
 };
 
 CardStatistics.propTypes = {
-  data: shape({
-    title: string,
-    statistic: number,
-  }).isRequired,
+  title: string.isRequired,
+  statistic: number.isRequired,
 };
+
+// Why is data needed
+// Proptypes is required

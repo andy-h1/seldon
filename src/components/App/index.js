@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import { SidePanel } from '../SidePanel';
-import { Header } from '../Header';
+import { NavBar } from '../NavBar';
 import * as S from './styles';
 
 const App = () => {
@@ -14,8 +14,8 @@ const App = () => {
           <Grid item xs={3}>
             <SidePanel />
           </Grid>
-          <Grid item xs={8}>
-            <Header />
+          <Grid item xs={7}>
+            <NavBar />
           </Grid>
         </Grid>
       </div>

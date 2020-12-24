@@ -10,12 +10,12 @@ export const BarChart = () => {
   // will be called initially and on every data change
   useEffect(() => {
     const margin = { top: 50, right: 50, bottom: 50, left: 50 };
-    const width = 300 - margin.left - margin.right;
-    const height = 200 - margin.top - margin.bottom;
+    const width = 300;
+    const height = 200;
 
     const svg = select(svgRef.current)
-      .attr('width', width + margin.left + margin.right)
-      .attr('height', height + margin.top + margin.bottom)
+      .attr('width', width)
+      .attr('height', height)
       .html(null)
       .attr('transform', `translate(${margin.left}, ${margin.top})`);
 

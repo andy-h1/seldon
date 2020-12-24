@@ -2,6 +2,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Typography } from '@material-ui/core';
+import { colours } from '../../tokens';
 
 const animate = (props) => keyframes`
   0% {
@@ -25,7 +26,7 @@ const Circle = styled.circle`
 const Text = styled.text`
   dominant-baseline: middle;
   text-anchor: middle;
-  fill: white;
+  fill: ${colours.greenBlueGradient};
 `;
 
 const SVGWrapper = styled.div`
