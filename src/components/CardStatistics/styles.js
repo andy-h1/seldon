@@ -17,9 +17,11 @@ export const CardWrapper = styled.div`
   }
 `;
 
-export const Title = styled.h3`
+export const Title = styled.p`
   color: ${colours.white};
   margin: 1em;
+  font-size: 1.17em;
+  font-weight: bolder;
 `;
 
 export const Statistics = styled.p`

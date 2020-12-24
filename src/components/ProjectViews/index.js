@@ -3,9 +3,6 @@ import { Button, Typography } from '@material-ui/core';
 import { LineGraph } from '../LineGraph';
 import * as S from './styles';
 
-const width = 500;
-const height = 500;
-
 export const ProjectViews = () => {
   const classes = S.useStyles();
   return (
@@ -18,7 +15,7 @@ export const ProjectViews = () => {
           Full report
         </Button>
       </S.TitleWrapper>
-      <LineGraph width={width} height={height} />
+      <LineGraph />
     </S.Wrapper>
   );
 };

@@ -7,7 +7,7 @@ export const Statistics = () => {
   return (
     <S.Wrapper>
       {StatisticsData.map((item) => {
-        return <CardStatistics title={item.title} statistic={item.statistic} key={item.name} />;
+        return <CardStatistics title={item.title} statistic={item.statistic} key={item.title} />;
       })}
     </S.Wrapper>
   );

@@ -8,7 +8,7 @@ export const HeaderDashboard = () => {
 
   return (
     <S.Wrapper>
-      <Typography component="div" variant="h4">
+      <Typography component="p" variant="h4">
         Dashboard
       </Typography>
       <S.ButtonWrapper>

@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 1em 0 0 0;
-  width: fit-content;
+  width: 100%;
 `;
 
 export const TitleWrapper = styled.div`
