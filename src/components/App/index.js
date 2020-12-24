@@ -11,10 +11,10 @@ const App = () => {
       <S.GlobalStyle />
       <div className={classes.root}>
         <Grid container spacing={1}>
-          <Grid item xs={3} direction="column" justify="center" alignItems="flex-start">
+          <Grid item xs={3}>
             <SidePanel />
           </Grid>
-          <Grid item xs={8} justify="center">
+          <Grid item xs={8}>
             <Header />
           </Grid>
         </Grid>

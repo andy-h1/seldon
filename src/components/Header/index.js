@@ -1,8 +1,8 @@
 import React from 'react';
-import { Grid, makeStyles } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { NavBar } from '../NavBar';
 import { DropdownMenu } from '../DropdownMenu';
-// import * as S from './styles';
+import * as S from './styles';
 
 const data = {
   name: 'Date',
@@ -13,16 +13,10 @@ const data = {
   },
 };
 
-const useStyles = makeStyles(() => ({
-  grid: {
-    width: '100%',
-  },
-}));
-
 export const Header = () => {
-  const classes = useStyles();
+  const classes = S.useStyles();
   return (
-    <Grid container direction="row" justify="space-around" alignItems="stretch" className={classes.grid}>
+    <Grid container direction="row" justify="space-between" className={classes.grid}>
       <Grid item xs={11}>
         <NavBar />
       </Grid>

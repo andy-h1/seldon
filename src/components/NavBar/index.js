@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@material-ui/core/styles';
-import { AppBar, Tabs, Tab, Typography, Grid, withStyles } from '@material-ui/core';
+import { Tabs, Tab, Typography, withStyles } from '@material-ui/core';
 import { TableMain } from '../TableMain';
 import { ProjectViews } from '../ProjectViews';
 import { HeaderDashboard } from '../HeaderDashboard';
@@ -10,6 +10,7 @@ import { SubTables } from '../SubTables';
 import { colours } from '../../tokens';
 import { UsageStatistics } from '../UsageStatistics';
 import { Statistics } from '../Statistics';
+import * as S from './styles';
 
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
@@ -41,15 +42,11 @@ const a11yProps = (index) => {
   };
 };
 
-const Wrapper = styled(Grid)({
-  margin: '0 1em 0 0',
-});
-
-const Header = styled(AppBar)({
-  backgroundColor: `${colours.darkGrey}`,
-  color: `${colours.white}`,
-  borderBottom: `2px solid ${colours.lightGrey}`,
-});
+// const Header = styled(AppBar)({
+//   backgroundColor: `${colours.darkGrey}`,
+//   color: `${colours.white}`,
+//   borderBottom: `2px solid ${colours.lightGrey}`,
+// });
 
 const StyledTabs = withStyles({
   indicator: {
@@ -76,8 +73,8 @@ export const NavBar = () => {
   };
 
   return (
-    <Wrapper>
-      <Header position="static" elevation={0}>
+    <S.Wrapper>
+      <S.Header position="static" elevation={0}>
         <StyledTabs variant="standard" value={value} onChange={handleChange} aria-label="dashboard tabs">
           <StyledTab label="Analyze" {...a11yProps(0)} />
           <StyledTab label="My campaigns" {...a11yProps(1)} />
@@ -86,7 +83,7 @@ export const NavBar = () => {
           <StyledTab label="Research" {...a11yProps(4)} />
           <StyledTab label="Inspect" {...a11yProps(5)} />
         </StyledTabs>
-      </Header>
+      </S.Header>
       <TabPanel value={value} index={0}>
         <HeaderDashboard />
         <Statistics />
@@ -99,6 +96,6 @@ export const NavBar = () => {
         <TableMain />
         <SubTables />
       </TabPanel>
-    </Wrapper>
+    </S.Wrapper>
   );
 };

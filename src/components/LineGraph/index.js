@@ -1,39 +1,42 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
+import { seedData } from './data';
+import { useInterval } from '../../hooks';
 import './styles.css';
 
+const POLLING_INTERVAL = 1250;
+
 export const LineGraph = () => {
+  const [dataSet, setDataSet] = useState(seedData);
+  const latestXValue = dataSet[dataSet.length - 1].x;
   const chartRef = useRef(null);
+  useInterval(() => {
+    setDataSet([...dataSet.slice(1), { x: latestXValue + 1, y: Math.random() }]);
+  }, POLLING_INTERVAL);
+
   const drawChart = () => {
     const margin = { top: 50, right: 50, bottom: 50, left: 50 };
     const width = window.innerWidth * 0.6 - margin.left - margin.right;
     const height = 300 - margin.top - margin.bottom;
 
-    const n = 21;
-
-    const xScale = d3
-      .scaleLinear()
-      .domain([0, n - 1])
-      .range([0, width]);
+    const xScale = d3.scaleLinear().domain([dataSet[0].x, latestXValue]).range([0, width]);
 
     const yScale = d3.scaleLinear().domain([0, 1]).range([height, 0]);
 
     const line = d3
       .line()
-      .x((d, i) => xScale(i))
+      .x((d, i) => xScale(d.x))
       .y((d) => yScale(d.y))
       .curve(d3.curveMonotoneX);
 
     const area = d3
       .area()
-      .x((d, i) => xScale(i))
+      .x((d, i) => xScale(d.x))
       .y0(height)
       .y1((d) => yScale(d.y))
       .curve(d3.curveMonotoneX);
-
-    const dataset = d3.range(n).map((d, i) => ({ x: i, y: d3.randomUniform(1)() }));
 
     const svg = d3
       .select(chartRef.current)
@@ -50,12 +53,12 @@ export const LineGraph = () => {
     svg.append('g').attr('class', 'grid').call(d3.axisLeft(yScale).tickSize(-width).tickFormat(''));
     svg.append('g').call(d3.axisLeft(yScale));
 
-    svg.append('path').datum(dataset).attr('class', 'area').attr('d', area);
-    svg.append('path').datum(dataset).attr('class', 'line').attr('d', line);
+    svg.append('path').datum(dataSet).attr('class', 'area').attr('d', area);
+    svg.append('path').datum(dataSet).attr('class', 'line').attr('d', line);
 
     svg
       .selectAll('circle')
-      .data(dataset)
+      .data(dataSet)
       .enter()
       .append('circle')
       .attr('class', 'dot')
@@ -82,7 +85,7 @@ export const LineGraph = () => {
     drawChart();
     window.addEventListener('resize', drawChart);
     return () => window.removeEventListener('resize', drawChart);
-  }, []);
+  }, [dataSet]);
 
   return <svg ref={chartRef} />;
 };

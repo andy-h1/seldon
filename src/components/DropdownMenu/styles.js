@@ -7,7 +7,11 @@ export const useStyles = makeStyles((theme) => ({
     height: '10px',
     minWidth: 100,
   },
+  input: {
+    color: 'white',
+  },
   selectEmpty: {
     marginTop: theme.spacing(0),
+    border: '1px solid white',
   },
 }));
