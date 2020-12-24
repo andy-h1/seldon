@@ -1,13 +1,12 @@
 import React from 'react';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import IconButton from '@material-ui/core/IconButton';
-import BarChartOutlinedIcon from '@material-ui/icons/BarChartOutlined';
-import DataUsageOutlinedIcon from '@material-ui/icons/DataUsageOutlined';
-import DoneOutlineOutlinedIcon from '@material-ui/icons/DoneOutlineOutlined';
-import PrintOutlinedIcon from '@material-ui/icons/PrintOutlined';
-import BuildOutlinedIcon from '@material-ui/icons/BuildOutlined';
+import { List, ListItem, ListItemAvatar, IconButton } from '@material-ui/core';
+import {
+  BarChartOutlined,
+  DataUsageOutlined,
+  DoneOutlineOutlined,
+  PrintOutlined,
+  BuildOutlined,
+} from '@material-ui/icons';
 import * as S from './styles';
 
 export const SidePanel = () => {
@@ -19,7 +18,7 @@ export const SidePanel = () => {
       <ListItem>
         <ListItemAvatar>
           <IconButton>
-            <DataUsageOutlinedIcon className={classes.icon} />
+            <DataUsageOutlined className={classes.icon} />
           </IconButton>
         </ListItemAvatar>
         <S.Text primary="Metrics" secondary="Track your apps across devices" />
@@ -27,7 +26,7 @@ export const SidePanel = () => {
       <ListItem>
         <ListItemAvatar>
           <IconButton>
-            <DoneOutlineOutlinedIcon className={classes.icon} />
+            <DoneOutlineOutlined className={classes.icon} />
           </IconButton>
         </ListItemAvatar>
         <S.Text primary="Results" secondary="View your results as an Excel file" />
@@ -35,7 +34,7 @@ export const SidePanel = () => {
       <ListItem>
         <ListItemAvatar>
           <IconButton>
-            <BarChartOutlinedIcon className={classes.icon} />
+            <BarChartOutlined className={classes.icon} />
           </IconButton>
         </ListItemAvatar>
         <S.Text primary="Google Analytics" secondary="Track visits to your sites" />
@@ -43,7 +42,7 @@ export const SidePanel = () => {
       <ListItem>
         <ListItemAvatar>
           <IconButton>
-            <PrintOutlinedIcon className={classes.icon} />
+            <PrintOutlined className={classes.icon} />
           </IconButton>
         </ListItemAvatar>
         <S.Text primary="Reports" secondary="Get insights into the big data" />
@@ -51,7 +50,7 @@ export const SidePanel = () => {
       <ListItem>
         <ListItemAvatar>
           <IconButton>
-            <BuildOutlinedIcon className={classes.icon} />
+            <BuildOutlined className={classes.icon} />
           </IconButton>
         </ListItemAvatar>
         <S.Text primary="More Tools" secondary="Upgrade your plan to PRO" />

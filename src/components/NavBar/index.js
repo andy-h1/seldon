@@ -41,6 +41,7 @@ const a11yProps = (index) => {
   };
 };
 
+// Need to refactor this code
 const StyledTabs = withStyles({
   indicator: {
     display: 'flex',
