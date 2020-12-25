@@ -1,22 +1,34 @@
 .line {
-    fill: none;
-    stroke: #88d781;
-    stroke-width: 5;
+  fill: none;
+  stroke: #88d781;
+  stroke-opacity: 80%;
+  stroke-width: 2;
 }
 
 .dot {
-    fill: #0e1b12;
-    stroke: #f2f3f4;
-    stroke-width: 3;
+  fill: #0e1b12;
+  stroke: #f2f3f4;
+  stroke-width: 2;
 }
 
 .area {
-    fill: #242728;
-    fill-opacity: 85%;
-    stroke: none;
+  fill: #242728;
+  fill-opacity: 85%;
+  stroke: none;
 }
 
 .grid {
-    stroke: black;
-    stroke-dasharray: 4;
+  stroke: #5e6366;
+  stroke-opacity: 25%;
+  stroke-dasharray: 4;
+}
+
+.tooltip {
+  fill: #ffffff;
+  font-size: 16px;
+}
+
+.tooltipDay {
+  fill: #ffffff;
+  font-size: 12px;
 }

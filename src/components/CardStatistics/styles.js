@@ -12,7 +12,7 @@ export const CardWrapper = styled.div`
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
   &:hover {
-    border: 2px solid ${colours.white};
+    border: 1px solid ${colours.white};
     color: ${colours.white};
   }
 `;
@@ -27,5 +27,5 @@ export const Title = styled.p`
 export const Statistics = styled.p`
   font-size: 40px;
   margin: 0.5em;
-  color: aquamarine;
+  color: ${colours.aqua};
 `;

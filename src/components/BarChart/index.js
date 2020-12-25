@@ -1,45 +1,42 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { select, scaleLinear, scaleBand } from 'd3';
+import './styles.css';
+import { colours } from '../../tokens';
+import { BarChartData } from './data';
 
 export const BarChart = () => {
-  const [data, setData] = useState([25, 30, 45, 60, 10, 65, 75, 12, 23, 34, 25, 25, 30, 45, 60, 10, 65, 75, 12, 23]);
   const svgRef = useRef();
 
   // will be called initially and on every data change
   useEffect(() => {
-    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
-    const width = 300;
-    const height = 200;
+    const width = 180;
+    const height = 60;
 
-    const svg = select(svgRef.current)
-      .attr('width', width)
-      .attr('height', height)
-      .html(null)
-      .attr('transform', `translate(${margin.left}, ${margin.top})`);
+    const svg = select(svgRef.current).attr('width', width).attr('height', height).html(null);
 
     const xScale = scaleBand()
-      .domain(data.map((value, index) => index))
-      .range([0, 300])
+      .domain(BarChartData.map((value, index) => index))
+      .range([0, width])
       .padding(0.2);
 
-    const yScale = scaleLinear().domain([0, 150]).range([150, 0]);
+    const yScale = scaleLinear().domain([0, 75]).range([height, 0]);
 
     svg
       .selectAll('.bar')
-      .data(data)
+      .data(BarChartData)
       .join('rect')
       .attr('class', 'bar')
 
       .style('transform', 'scale(1, -1)')
       .attr('x', (value, index) => xScale(index))
-      .attr('y', -150)
+      .attr('y', -height)
       .attr('width', xScale.bandwidth())
       .transition()
       .duration(1000)
-      .attr('fill', 'grey')
-      .attr('height', (value) => 150 - yScale(value));
+      .attr('fill', `${colours.grey}`)
+      .attr('height', (value) => height - yScale(value));
   }, []);
 
   return <svg ref={svgRef} />;

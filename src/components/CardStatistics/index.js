@@ -15,6 +15,3 @@ CardStatistics.propTypes = {
   title: string.isRequired,
   statistic: number.isRequired,
 };
-
-// Why is data needed
-// Proptypes is required

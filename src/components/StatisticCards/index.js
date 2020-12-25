@@ -3,7 +3,7 @@ import { CardStatistics } from '../CardStatistics';
 import { StatisticsData } from './data';
 import * as S from './styles';
 
-export const Statistics = () => {
+export const StatisticCards = () => {
   return (
     <S.Wrapper>
       {StatisticsData.map((item) => {

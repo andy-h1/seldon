@@ -3,12 +3,14 @@ import React from 'react';
 import { BarChart } from '../BarChart';
 import * as S from './styles';
 
-export const CardHighlight = ({ data }) => {
-  const { statistics, title } = data;
+export const CardBarChart = ({ statistic, title }) => {
   return (
     <S.CardWrapper>
-      <p>{statistics}</p>
-      <p>{title}</p>
+      <S.TitleWrapper>
+        <S.Text>{statistic}</S.Text>
+        <S.Title>{title}</S.Title>
+      </S.TitleWrapper>
+
       <BarChart />
     </S.CardWrapper>
   );

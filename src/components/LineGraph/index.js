@@ -45,6 +45,7 @@ export const LineGraph = () => {
       .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
     const tooltip = svg.append('text').attr('class', 'tooltip');
+    const tooltipDay = svg.append('text').attr('class', 'tooltipDay');
 
     svg.append('g').attr('transform', `translate(0, ${height})`).call(d3.axisBottom(xScale));
 
@@ -66,16 +67,25 @@ export const LineGraph = () => {
       .on('mouseover', (event, d) => {
         d3.select(event.currentTarget).transition().duration(100).attr('r', 7);
 
+        tooltipDay
+          .raise()
+          .attr('opacity', 1)
+          .attr('x', xScale(d.x) - 20)
+          .attr('y', yScale(d.y) - 40)
+          .text(`Day ${d.x}`);
+
         tooltip
           .raise()
           .attr('opacity', 1)
-          .attr('x', xScale(d.x) - 30)
-          .attr('y', yScale(d.y) - 15)
+          .attr('x', xScale(d.x) - 15)
+          .attr('y', yScale(d.y) - 20)
           .text(d.y.toFixed(2));
       })
+
       .on('mouseout', (event) => {
-        d3.select(event.currentTarget).transition().duration(200).attr('r', 5);
+        d3.select(event.currentTarget).transition().duration(500).attr('r', 5);
         tooltip.attr('opacity', 0);
+        tooltipDay.attr('opacity', 0);
       });
   };
 

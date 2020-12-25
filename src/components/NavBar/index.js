@@ -6,10 +6,11 @@ import { TableMain } from '../TableMain';
 import { ProjectViews } from '../ProjectViews';
 import { HeaderDashboard } from '../HeaderDashboard';
 import { SubTables } from '../SubTables';
-import { colours } from '../../tokens';
 import { UsageStatistics } from '../UsageStatistics';
-import { Statistics } from '../Statistics';
+import { StatisticCards } from '../StatisticCards';
+import { BarChartCards } from '../BarChartCards';
 import * as S from './styles';
+import { colours } from '../../tokens';
 
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
@@ -73,13 +74,13 @@ export const NavBar = () => {
       </S.Header>
       <TabPanel value={value} index={0}>
         <HeaderDashboard />
-        <Statistics />
+        <BarChartCards />
         <ProjectViews />
         <UsageStatistics />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <HeaderDashboard />
-        <Statistics />
+        <StatisticCards />
         <TableMain />
         <SubTables />
       </TabPanel>
