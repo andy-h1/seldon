@@ -7,3 +7,10 @@ Common Scripts:
 - yarn test run the test suite
 - yarn lint to lint the project
 - yarn storybook run Storybook to see the component library
+
+Developer Notes:
+
+If given more time I would look to make this dashboard mobile responsive. In mobile the side panel would be turned into a burger menu, the cards would turn into a carousel and the rest of the components would be stacked into a column.
+
+Context API
+Linear Gradient not working in Chrome

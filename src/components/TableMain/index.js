@@ -1,14 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import TableSortLabel from '@material-ui/core/TableSortLabel';
-import { colours } from '../../tokens';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableSortLabel } from '@material-ui/core';
+import * as S from './styles';
 
 const createData = (campaign, efficiency, plays, finished, likes, comments) => {
   return { campaign, efficiency, plays, finished, likes, comments };
@@ -74,6 +67,7 @@ const EnhancedTableHead = (props) => {
             sortDirection={orderBy === headCell.id ? order : false}
           >
             <TableSortLabel
+              className={classes.labelText}
               active={orderBy === headCell.id}
               direction={orderBy === headCell.id ? order : 'asc'}
               onClick={createSortHandler(headCell.id)}
@@ -93,49 +87,14 @@ const EnhancedTableHead = (props) => {
 };
 
 EnhancedTableHead.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.shape.isRequired,
   onRequestSort: PropTypes.func.isRequired,
   order: PropTypes.oneOf(['asc', 'desc']).isRequired,
   orderBy: PropTypes.string.isRequired,
 };
 
-const useStyles = makeStyles(() => ({
-  root: {
-    width: '100%',
-    margin: '1em 0',
-  },
-  visuallyHidden: {
-    border: 0,
-    clip: 'rect(0 0 0 0)',
-    height: 1,
-    margin: -1,
-    overflow: 'hidden',
-    padding: 0,
-    position: 'absolute',
-    top: 20,
-    width: 1,
-  },
-  text: {
-    color: 'white',
-    fontSize: '19px',
-    fontWeight: 'bold',
-    borderBottom: `1 px solid ${colours.black}`,
-  },
-  header: {
-    borderBottom: `3px solid ${colours.black}`,
-  },
-  headerText: {
-    color: 'white',
-    fontSize: '16px',
-  },
-  row: {
-    borderBottom: `1 px solid ${colours.black}`,
-  },
-}));
-
 export const TableMain = () => {
-  const classes = useStyles();
+  const classes = S.useStyles();
   const [order, setOrder] = React.useState('asc');
   const [orderBy, setOrderBy] = React.useState('efficiency');
 

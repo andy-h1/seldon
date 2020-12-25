@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main Table component should render 1`] = `
+<div
+  class="makeStyles-root-1"
+>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      aria-label="enhanced table"
+      aria-labelledby="tableTitle"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root makeStyles-header-4"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignLeft MuiTableCell-paddingNone"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7"
+              role="button"
+              tabindex="0"
+            >
+              Campaign
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            aria-sort="ascending"
+            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7 MuiTableSortLabel-active"
+              role="button"
+              tabindex="0"
+            >
+              Efficiency
+              <span
+                class="makeStyles-visuallyHidden-2"
+              >
+                sorted ascending
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7"
+              role="button"
+              tabindex="0"
+            >
+              Plays
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7"
+              role="button"
+              tabindex="0"
+            >
+              Finished
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7"
+              role="button"
+              tabindex="0"
+            >
+              Likes
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7"
+              role="button"
+              tabindex="0"
+            >
+              Comments
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root makeStyles-row-6"
+      >
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+          >
+            Social Networks traffic
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            95
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            95
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            31
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            11
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            0
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+          >
+            Instagram stories marketing
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            186
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            186
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            92
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            8
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            1
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+          >
+            Visitors from video sources
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            329
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            329
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            256
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            4
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+          >
+            Other Referrers
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            804
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            804
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            697
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            40
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+          >
+            22
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

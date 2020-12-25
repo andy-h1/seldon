@@ -23,7 +23,7 @@ const TabPanel = (props) => {
       aria-labelledby={`nav-tab-${index}`}
       {...other}
     >
-      {value === index && <Typography>{children}</Typography>}
+      {value === index && <Typography component="div">{children}</Typography>}
     </div>
   );
 };

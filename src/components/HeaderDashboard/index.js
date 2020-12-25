@@ -8,9 +8,11 @@ export const HeaderDashboard = () => {
 
   return (
     <S.Wrapper>
-      <Typography component="p" variant="h4">
-        Dashboard
-      </Typography>
+      <div>
+        <Typography component="div" variant="h4">
+          Dashboard
+        </Typography>
+      </div>
       <S.ButtonWrapper>
         <Button aria-label="print" variant="contained" className={classes.button} size="small">
           <PrintOutlined />
