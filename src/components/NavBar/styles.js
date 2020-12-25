@@ -19,14 +19,3 @@ export const StyledTab = styled(Tab)({
   fontWeight: 'bold',
   fontSize: '16px',
 });
-
-// export const StyledTabs = withStyles({
-//   indicator: {
-//     display: 'flex',
-//     justifyContent: 'center',
-//     '& > span': {
-//       width: '100%',
-//       backgroundColor: `${colours.white}`,
-//     },
-//   },
-// })((props) => <Tabs {...props} TabIndicatorProps={{ children: <span /> }} />);

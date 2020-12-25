@@ -8,7 +8,7 @@ exports[`Main Table component should render 1`] = `
     class="MuiTableContainer-root"
   >
     <table
-      aria-label="enhanced table"
+      aria-label="enhanced-table"
       aria-labelledby="tableTitle"
       class="MuiTable-root"
     >

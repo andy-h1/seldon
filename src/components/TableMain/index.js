@@ -107,7 +107,7 @@ export const TableMain = () => {
   return (
     <div className={classes.root}>
       <TableContainer>
-        <Table aria-labelledby="tableTitle" aria-label="enhanced table">
+        <Table aria-labelledby="tableTitle" aria-label="enhanced-table">
           <EnhancedTableHead
             classes={classes}
             order={order}

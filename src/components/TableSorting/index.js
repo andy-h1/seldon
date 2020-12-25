@@ -1,12 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import TableSortLabel from '@material-ui/core/TableSortLabel';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableSortLabel } from '@material-ui/core';
 import * as S from './styles';
 
 const createData = (title, time, earned) => {
@@ -14,12 +8,29 @@ const createData = (title, time, earned) => {
 };
 
 const rows = [
-  createData('Mockups for Figma', '16 mins', '$24.40'),
-  createData('Material Icons Set', '2 hours', '$14.40'),
-  createData('Material Design System', '1 day', '$68.00'),
-  createData('Material Desktop System', '1 day', '$128.50'),
-  createData('iOS toolkit for Figma', '2 days', '$58.00'),
+  createData('Mockups for Figma', 16, 24.4),
+  createData('Material Icons Set', 120, 14.4),
+  createData('Material Design System', 1440, 68.0),
+  createData('Material Desktop System', 1560, 128.5),
+  createData('iOS toolkit for Figma', 2880, 58.0),
 ];
+
+const convertTime = (number) => {
+  const day = Math.floor(number / 1440);
+  const hour = Math.floor((number - day * 1440) / 60);
+
+  if (number >= 1440) {
+    return `${day} days`;
+  }
+  if (number > 60 && number < 1440) {
+    return `${hour} hours`;
+  }
+  return `${number} mins`;
+};
+
+const convertToCurrency = (data) => {
+  return `$${data.toFixed(2)}`;
+};
 
 const descendingComparator = (a, b, orderBy) => {
   if (b[orderBy] < a[orderBy]) {
@@ -48,8 +59,8 @@ const stableSort = (array, comparator) => {
 };
 
 const headCells = [
-  { id: 'last purchased', numeric: false, disablePadding: true, label: 'Last Purchased' },
-  { id: 'when', numeric: true, disablePadding: false, label: 'When' },
+  { id: 'title', numeric: false, disablePadding: true, label: 'Last Purchased' },
+  { id: 'time', numeric: true, disablePadding: false, label: 'When' },
   { id: 'earned', numeric: true, disablePadding: false, label: 'Earned' },
 ];
 
@@ -71,6 +82,7 @@ const EnhancedTableHead = (props) => {
             sortDirection={orderBy === headCell.id ? order : false}
           >
             <TableSortLabel
+              className={classes.labelText}
               active={orderBy === headCell.id}
               direction={orderBy === headCell.id ? order : 'asc'}
               onClick={createSortHandler(headCell.id)}
@@ -90,8 +102,7 @@ const EnhancedTableHead = (props) => {
 };
 
 EnhancedTableHead.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.shape.isRequired,
   onRequestSort: PropTypes.func.isRequired,
   order: PropTypes.oneOf(['asc', 'desc']).isRequired,
   orderBy: PropTypes.string.isRequired,
@@ -127,10 +138,10 @@ export const TableSorting = () => {
                     {row.title}
                   </TableCell>
                   <TableCell className={classes.text} align="right">
-                    {row.time}
+                    {convertTime(row.time)}
                   </TableCell>
                   <TableCell className={classes.earnedText} align="right">
-                    {row.earned}
+                    {convertToCurrency(row.earned)}
                   </TableCell>
                 </TableRow>
               );

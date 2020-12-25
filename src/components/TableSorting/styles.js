@@ -38,4 +38,9 @@ export const useStyles = makeStyles(() => ({
     color: `${colours.green}`,
     fontSize: '16px',
   },
+  labelText: {
+    '&.MuiTableSortLabel-root, &.MuiTableSortLabel-active': {
+      color: `${colours.white}`,
+    },
+  },
 }));
