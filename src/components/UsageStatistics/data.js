@@ -1,32 +1,34 @@
+import { colours } from '../../tokens';
+
 export const UsageStatisticsData = [
   {
     name: 'Components',
     usage: 895,
     total: 1000,
-    color: 'red',
+    color: `${colours.green1}`,
   },
   {
     name: 'Templates',
     usage: 284,
     total: 500,
-    color: 'blue',
+    color: `${colours.blue1}`,
   },
   {
     name: 'Pages',
     usage: 23,
     total: 100,
-    color: 'green',
+    color: `${colours.orange1}`,
   },
   {
     name: 'Projects',
     usage: 1,
     total: 2,
-    color: 'pink',
+    color: `${colours.pink1}`,
   },
   {
     name: 'Team Members',
     usage: 8,
     total: 10,
-    color: 'purple',
+    color: `${colours.green2}`,
   },
 ];

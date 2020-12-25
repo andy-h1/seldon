@@ -1970,6 +1970,28 @@
     jss-plugin-vendor-prefixer "^10.0.3"
     prop-types "^15.7.2"
 
+"@material-ui/styles@^5.0.0-alpha.20":
+  version "5.0.0-alpha.20"
+  resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-5.0.0-alpha.20.tgz#bae0ac4949cbce13f8788cc60f2c3557bb483da3"
+  integrity sha512-Bm6PTKZrSAbTS/AbDQz9lGlJUQUwKGxpYGr+0PFjJ2TqtMLfUgNWBthfeaQZ12gPhq4r14JvjAVJ9WjD6qlDUQ==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@emotion/hash" "^0.8.0"
+    "@material-ui/types" "5.1.2"
+    "@material-ui/utils" "5.0.0-alpha.20"
+    clsx "^1.0.4"
+    csstype "^3.0.2"
+    hoist-non-react-statics "^3.3.2"
+    jss "^10.0.3"
+    jss-plugin-camel-case "^10.0.3"
+    jss-plugin-default-unit "^10.0.3"
+    jss-plugin-global "^10.0.3"
+    jss-plugin-nested "^10.0.3"
+    jss-plugin-props-sort "^10.0.3"
+    jss-plugin-rule-value-function "^10.0.3"
+    jss-plugin-vendor-prefixer "^10.0.3"
+    prop-types "^15.7.2"
+
 "@material-ui/system@^4.11.2":
   version "4.11.2"
   resolved "https://registry.yarnpkg.com/@material-ui/system/-/system-4.11.2.tgz#7f0a754bba3673ed5fdbfa02fe438096c104b1f6"
@@ -1980,10 +2002,26 @@
     csstype "^2.5.2"
     prop-types "^15.7.2"
 
+"@material-ui/types@5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@material-ui/types/-/types-5.1.2.tgz#a70e59d16d065b296b242a5784872c3fe4ae3a40"
+  integrity sha512-BFPbIjS0CcCTbjERoMZTuWqa5UZS/jP+ZaM56C6lryvDP51//l+PSrPK4LslLJCPuIKRgfeGTVA6ksoZ+DnQ4A==
+
 "@material-ui/types@^5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@material-ui/types/-/types-5.1.0.tgz#efa1c7a0b0eaa4c7c87ac0390445f0f88b0d88f2"
   integrity sha512-7cqRjrY50b8QzRSYyhSpx4WRw2YuO0KKIGQEVk5J8uoz2BanawykgZGoWEqKm7pVIbzFDN0SpPcVV4IhOFkl8A==
+
+"@material-ui/utils@5.0.0-alpha.20":
+  version "5.0.0-alpha.20"
+  resolved "https://registry.yarnpkg.com/@material-ui/utils/-/utils-5.0.0-alpha.20.tgz#3b8a5e1ead2a86faf3d6b35b24e14df22d1cc39d"
+  integrity sha512-GOi2zO8fuqraK8j1n4VxTHsd9L75EiUaM9H5sM16MYG5Ewd27trglAzOyO74Xzxg4j1y9IYuC04ymZbiZ67pUg==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@types/prop-types" "^15.7.3"
+    "@types/react-is" "^16.7.1 || ^17.0.0"
+    prop-types "^15.7.2"
+    react-is "^16.8.0 || ^17.0.0"
 
 "@material-ui/utils@^4.11.2":
   version "4.11.2"
@@ -3095,7 +3133,7 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.1.5.tgz#b6ab3bba29e16b821d84e09ecfaded462b816b00"
   integrity sha512-UEyp8LwZ4Dg30kVU2Q3amHHyTn1jEdhCIE59ANed76GaT1Vp76DD3ZWSAxgCrw6wJ0TqeoBpqmfUHiUDPs//HQ==
 
-"@types/prop-types@*":
+"@types/prop-types@*", "@types/prop-types@^15.7.3":
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
@@ -3125,6 +3163,13 @@
   dependencies:
     "@types/react" "*"
     "@types/reactcss" "*"
+
+"@types/react-is@^16.7.1 || ^17.0.0":
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-is/-/react-is-17.0.0.tgz#6b60190ae60591ae0c83d6f3854e61e08f5a7976"
+  integrity sha512-A0DQ1YWZ0RG2+PV7neAotNCIh8gZ3z7tQnDJyS2xRPDNtAtSPcJ9YyfMP8be36Ha0kQRzbZCrrTMznA4blqO5g==
+  dependencies:
+    "@types/react" "*"
 
 "@types/react-syntax-highlighter@11.0.4":
   version "11.0.4"

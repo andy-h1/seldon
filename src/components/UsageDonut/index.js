@@ -3,7 +3,6 @@ import React from 'react';
 import { Typography } from '@material-ui/core';
 import styled, { keyframes } from 'styled-components';
 import * as S from './styles';
-import { colours } from '../../tokens';
 
 const animate = (props) => keyframes`
 0% {
@@ -17,13 +16,13 @@ const animate = (props) => keyframes`
 const Text = styled.text`
   dominant-baseline: middle;
   text-anchor: middle;
-  fill: url(#donutFill) ${colours.greenYellow};
+  fill: url(#donutFill);
 `;
 
 const Circle = styled.circle`
   animation: ${animate} 1.5s;
   fill: transparent;
-  stroke: url(#donutFill) ${colours.greenYellow};
+  stroke: url(#donutFill);
   stroke-dasharray: ${({ perimeter }) => perimeter};
   stroke-dashoffset: ${(props) => props.perimeterGap};
   stroke-linecap: round;
@@ -54,12 +53,12 @@ export const UsageDonut = ({ data }) => {
           {usage}
         </Text>
 
-        <def>
+        <defs>
           <linearGradient id="donutFill">
-            <stop offset="0%" stopColor="#cbf07d" />
-            <stop offset="100%" stopColor="#80e88c" />
+            <stop offset="0%" stopColor="#83f9b0" />
+            <stop offset="100%" stopColor="#cbf07d" />
           </linearGradient>
-        </def>
+        </defs>
       </svg>
 
       <Typography component="p">{name} used</Typography>

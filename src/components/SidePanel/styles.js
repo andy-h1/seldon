@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { ListItemText, makeStyles } from '@material-ui/core';
+import { ListItemText } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import { colours } from '../../tokens';
 
 export const Button = styled.button`

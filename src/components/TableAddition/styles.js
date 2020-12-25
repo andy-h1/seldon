@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { makeStyles, TableCell } from '@material-ui/core';
+import { TableCell } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import { colours } from '../../tokens';
 
 export const useStyles = makeStyles(() => ({

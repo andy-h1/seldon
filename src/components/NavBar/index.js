@@ -1,7 +1,8 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Tabs, Typography, withStyles } from '@material-ui/core';
+import { Tabs, Typography } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import { TableMain } from '../TableMain';
 import { ProjectViews } from '../ProjectViews';
 import { HeaderDashboard } from '../HeaderDashboard';

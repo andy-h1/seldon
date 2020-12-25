@@ -1917,34 +1917,34 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <circle
-                      class="sc-crrsfI iTauvq"
-                      color="red"
+                      class="sc-crrsfI xSqHo"
+                      color="#cbf07d"
                       cx="50"
                       cy="50"
                       r="45"
                       transform="rotate (-90 50 50)"
                     />
                     <text
-                      class="sc-iqHYGH eRtJhp"
+                      class="sc-iqHYGH dVrBrT"
                       x="50%"
                       y="50%"
                     >
                       895
                     </text>
-                    <def>
+                    <defs>
                       <lineargradient
                         id="donutFill"
                       >
                         <stop
                           offset="0%"
-                          stop-color="#cbf07d"
+                          stop-color="#83f9b0"
                         />
                         <stop
                           offset="100%"
-                          stop-color="#80e88c"
+                          stop-color="#cbf07d"
                         />
                       </lineargradient>
-                    </def>
+                    </defs>
                   </svg>
                   <p
                     class="MuiTypography-root MuiTypography-body1"
@@ -1977,34 +1977,34 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <circle
-                      class="sc-crrsfI nZpCd"
-                      color="blue"
+                      class="sc-crrsfI jhmtXr"
+                      color="#83f9b0"
                       cx="50"
                       cy="50"
                       r="45"
                       transform="rotate (-90 50 50)"
                     />
                     <text
-                      class="sc-iqHYGH eRtJhp"
+                      class="sc-iqHYGH dVrBrT"
                       x="50%"
                       y="50%"
                     >
                       284
                     </text>
-                    <def>
+                    <defs>
                       <lineargradient
                         id="donutFill"
                       >
                         <stop
                           offset="0%"
-                          stop-color="#cbf07d"
+                          stop-color="#83f9b0"
                         />
                         <stop
                           offset="100%"
-                          stop-color="#80e88c"
+                          stop-color="#cbf07d"
                         />
                       </lineargradient>
-                    </def>
+                    </defs>
                   </svg>
                   <p
                     class="MuiTypography-root MuiTypography-body1"
@@ -2037,34 +2037,34 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <circle
-                      class="sc-crrsfI dhmBlX"
-                      color="green"
+                      class="sc-crrsfI XLMOl"
+                      color="#f3aa18"
                       cx="50"
                       cy="50"
                       r="45"
                       transform="rotate (-90 50 50)"
                     />
                     <text
-                      class="sc-iqHYGH eRtJhp"
+                      class="sc-iqHYGH dVrBrT"
                       x="50%"
                       y="50%"
                     >
                       23
                     </text>
-                    <def>
+                    <defs>
                       <lineargradient
                         id="donutFill"
                       >
                         <stop
                           offset="0%"
-                          stop-color="#cbf07d"
+                          stop-color="#83f9b0"
                         />
                         <stop
                           offset="100%"
-                          stop-color="#80e88c"
+                          stop-color="#cbf07d"
                         />
                       </lineargradient>
-                    </def>
+                    </defs>
                   </svg>
                   <p
                     class="MuiTypography-root MuiTypography-body1"
@@ -2097,34 +2097,34 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <circle
-                      class="sc-crrsfI cGaiRy"
-                      color="pink"
+                      class="sc-crrsfI epEuuY"
+                      color="#f371a8"
                       cx="50"
                       cy="50"
                       r="45"
                       transform="rotate (-90 50 50)"
                     />
                     <text
-                      class="sc-iqHYGH eRtJhp"
+                      class="sc-iqHYGH dVrBrT"
                       x="50%"
                       y="50%"
                     >
                       1
                     </text>
-                    <def>
+                    <defs>
                       <lineargradient
                         id="donutFill"
                       >
                         <stop
                           offset="0%"
-                          stop-color="#cbf07d"
+                          stop-color="#83f9b0"
                         />
                         <stop
                           offset="100%"
-                          stop-color="#80e88c"
+                          stop-color="#cbf07d"
                         />
                       </lineargradient>
-                    </def>
+                    </defs>
                   </svg>
                   <p
                     class="MuiTypography-root MuiTypography-body1"
@@ -2157,34 +2157,34 @@ exports[`App component should render 1`] = `
                       transform="rotate (-90 50 50)"
                     />
                     <circle
-                      class="sc-crrsfI ghBtrd"
-                      color="purple"
+                      class="sc-crrsfI bCwYyX"
+                      color="#80e88c"
                       cx="50"
                       cy="50"
                       r="45"
                       transform="rotate (-90 50 50)"
                     />
                     <text
-                      class="sc-iqHYGH eRtJhp"
+                      class="sc-iqHYGH dVrBrT"
                       x="50%"
                       y="50%"
                     >
                       8
                     </text>
-                    <def>
+                    <defs>
                       <lineargradient
                         id="donutFill"
                       >
                         <stop
                           offset="0%"
-                          stop-color="#cbf07d"
+                          stop-color="#83f9b0"
                         />
                         <stop
                           offset="100%"
-                          stop-color="#80e88c"
+                          stop-color="#cbf07d"
                         />
                       </lineargradient>
-                    </def>
+                    </defs>
                   </svg>
                   <p
                     class="MuiTypography-root MuiTypography-body1"

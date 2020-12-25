@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import { colours } from '../../tokens';
 
 export const TitleWrapper = styled.div`
