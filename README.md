@@ -12,5 +12,4 @@ Developer Notes:
 
 If given more time I would look to make this dashboard mobile responsive. In mobile the side panel would be turned into a burger menu, the cards would turn into a carousel and the rest of the components would be stacked into a column.
 
-Context API
-Linear Gradient not working in Chrome
+I didn't implement React Context in this task as there wasn't much prop drilling in my app. However please find this link for a previous project where I implemented Context API to demonstrate my knowledge: https://github.com/andy-h1/Idea-Board/blob/master/src/contexts/IdeaContext/index.js
