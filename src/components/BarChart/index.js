@@ -1,5 +1,3 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from 'react';
 import { select, scaleLinear, scaleBand } from 'd3';
 import './styles.css';
@@ -9,7 +7,6 @@ import { BarChartData } from './data';
 export const BarChart = () => {
   const svgRef = useRef();
 
-  // will be called initially and on every data change
   useEffect(() => {
     const width = 180;
     const height = 60;

@@ -1,0 +1,333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Usage Donuts component should render 1`] = `
+<div>
+  <div
+    class="sc-gKsewC iBQUSI"
+  >
+    <div
+      class="MuiTypography-root MuiTypography-h5"
+    >
+      Usage Statistics
+    </div>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-1"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Upgrade Account
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+  <div
+    class="sc-iBPRYJ jPDZtQ"
+  >
+    <div
+      class="sc-hKgILt hltTKj"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 100 100"
+        width="100%"
+      >
+        <circle
+          class="sc-gsTCUz cRaPmX"
+          cx="50"
+          cy="50"
+          r="45"
+          transform="rotate (-90 50 50)"
+        />
+        <circle
+          class="sc-jSgupP kYzWQU"
+          color="#cbf07d"
+          cx="50"
+          cy="50"
+          r="45"
+          transform="rotate (-90 50 50)"
+        />
+        <text
+          class="sc-eCssSg kPwlTr"
+          x="50%"
+          y="50%"
+        >
+          895
+        </text>
+        <defs>
+          <lineargradient
+            id="donutFill"
+          >
+            <stop
+              offset="0%"
+              stop-color="#83f9b0"
+            />
+            <stop
+              offset="100%"
+              stop-color="#cbf07d"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        Components
+         used
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        105
+        /
+        1000
+         left
+      </p>
+    </div>
+    <div
+      class="sc-hKgILt hltTKj"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 100 100"
+        width="100%"
+      >
+        <circle
+          class="sc-gsTCUz cRaPmX"
+          cx="50"
+          cy="50"
+          r="45"
+          transform="rotate (-90 50 50)"
+        />
+        <circle
+          class="sc-jSgupP gnHkjn"
+          color="#83f9b0"
+          cx="50"
+          cy="50"
+          r="45"
+          transform="rotate (-90 50 50)"
+        />
+        <text
+          class="sc-eCssSg kPwlTr"
+          x="50%"
+          y="50%"
+        >
+          284
+        </text>
+        <defs>
+          <lineargradient
+            id="donutFill"
+          >
+            <stop
+              offset="0%"
+              stop-color="#83f9b0"
+            />
+            <stop
+              offset="100%"
+              stop-color="#cbf07d"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        Templates
+         used
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        216
+        /
+        500
+         left
+      </p>
+    </div>
+    <div
+      class="sc-hKgILt hltTKj"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 100 100"
+        width="100%"
+      >
+        <circle
+          class="sc-gsTCUz cRaPmX"
+          cx="50"
+          cy="50"
+          r="45"
+          transform="rotate (-90 50 50)"
+        />
+        <circle
+          class="sc-jSgupP gJyorR"
+          color="#f3aa18"
+          cx="50"
+          cy="50"
+          r="45"
+          transform="rotate (-90 50 50)"
+        />
+        <text
+          class="sc-eCssSg kPwlTr"
+          x="50%"
+          y="50%"
+        >
+          23
+        </text>
+        <defs>
+          <lineargradient
+            id="donutFill"
+          >
+            <stop
+              offset="0%"
+              stop-color="#83f9b0"
+            />
+            <stop
+              offset="100%"
+              stop-color="#cbf07d"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        Pages
+         used
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        77
+        /
+        100
+         left
+      </p>
+    </div>
+    <div
+      class="sc-hKgILt hltTKj"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 100 100"
+        width="100%"
+      >
+        <circle
+          class="sc-gsTCUz cRaPmX"
+          cx="50"
+          cy="50"
+          r="45"
+          transform="rotate (-90 50 50)"
+        />
+        <circle
+          class="sc-jSgupP gVJVbs"
+          color="#f371a8"
+          cx="50"
+          cy="50"
+          r="45"
+          transform="rotate (-90 50 50)"
+        />
+        <text
+          class="sc-eCssSg kPwlTr"
+          x="50%"
+          y="50%"
+        >
+          1
+        </text>
+        <defs>
+          <lineargradient
+            id="donutFill"
+          >
+            <stop
+              offset="0%"
+              stop-color="#83f9b0"
+            />
+            <stop
+              offset="100%"
+              stop-color="#cbf07d"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        Projects
+         used
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        1
+        /
+        2
+         left
+      </p>
+    </div>
+    <div
+      class="sc-hKgILt hltTKj"
+    >
+      <svg
+        height="100%"
+        viewBox="0 0 100 100"
+        width="100%"
+      >
+        <circle
+          class="sc-gsTCUz cRaPmX"
+          cx="50"
+          cy="50"
+          r="45"
+          transform="rotate (-90 50 50)"
+        />
+        <circle
+          class="sc-jSgupP cyjpgD"
+          color="#80e88c"
+          cx="50"
+          cy="50"
+          r="45"
+          transform="rotate (-90 50 50)"
+        />
+        <text
+          class="sc-eCssSg kPwlTr"
+          x="50%"
+          y="50%"
+        >
+          8
+        </text>
+        <defs>
+          <lineargradient
+            id="donutFill"
+          >
+            <stop
+              offset="0%"
+              stop-color="#83f9b0"
+            />
+            <stop
+              offset="100%"
+              stop-color="#cbf07d"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        Team Members
+         used
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        2
+        /
+        10
+         left
+      </p>
+    </div>
+  </div>
+</div>
+`;

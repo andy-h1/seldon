@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -7,7 +8,7 @@ import { TableMain } from '../TableMain';
 import { ProjectViews } from '../ProjectViews';
 import { HeaderDashboard } from '../HeaderDashboard';
 import { SubTables } from '../SubTables';
-import { UsageStatistics } from '../UsageStatistics';
+import { UsageDonuts } from '../UsageDonuts';
 import { StatisticCards } from '../StatisticCards';
 import { BarChartCards } from '../BarChartCards';
 import * as S from './styles';
@@ -29,8 +30,8 @@ const TabPanel = (props) => {
   );
 };
 
+// Material UI proptypes runs into issues with eslint so disabled on file
 TabPanel.propTypes = {
-  // eslint-disable-next-line react/require-default-props
   children: PropTypes.node,
   index: PropTypes.any.isRequired,
   value: PropTypes.any.isRequired,
@@ -43,7 +44,6 @@ const a11yProps = (index) => {
   };
 };
 
-// Need to refactor this code
 const StyledTabs = withStyles({
   indicator: {
     display: 'flex',
@@ -77,7 +77,7 @@ export const NavBar = () => {
         <HeaderDashboard />
         <BarChartCards />
         <ProjectViews />
-        <UsageStatistics />
+        <UsageDonuts />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <HeaderDashboard />

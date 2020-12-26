@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button, Typography } from '@material-ui/core';
-import { UsageDonut } from '../UsageDonut';
-import { UsageStatisticsData } from './data';
+import { DonutUsage } from '../DonutUsage';
+import { UsageDonutsData } from './data';
 import * as S from './styles';
 
-export const UsageStatistics = () => {
+export const UsageDonuts = () => {
   const classes = S.useStyles();
   return (
     <div>
@@ -18,8 +18,8 @@ export const UsageStatistics = () => {
       </S.TitleWrapper>
 
       <S.DonutWrapper>
-        {UsageStatisticsData.map((item) => {
-          return <UsageDonut data={item} key={item.name} />;
+        {UsageDonutsData.map((item) => {
+          return <DonutUsage data={item} key={item.name} />;
         })}
       </S.DonutWrapper>
     </div>

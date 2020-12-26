@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import { string, number } from 'prop-types';
 import { BarChart } from '../BarChart';
 import * as S from './styles';
 
@@ -14,4 +14,9 @@ export const CardBarChart = ({ statistic, title }) => {
       <BarChart />
     </S.CardWrapper>
   );
+};
+
+CardBarChart.propTypes = {
+  title: string.isRequired,
+  statistic: number.isRequired,
 };

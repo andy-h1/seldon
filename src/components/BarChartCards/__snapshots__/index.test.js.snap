@@ -1,0 +1,660 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bar Chart Cards component should render 1`] = `
+<div
+  class="sc-eCssSg lgLVzh"
+>
+  <div
+    class="sc-bdfBwQ hFCjbE"
+  >
+    <div
+      class="sc-gsTCUz hHGVOw"
+    >
+      <p
+        class="sc-hKgILt iQbUVb"
+      >
+        22386
+      </p>
+      <p
+        class="sc-dlfnbm hwPpdE"
+      >
+        attachment views
+      </p>
+    </div>
+    <svg
+      height="60"
+      width="180"
+    >
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="1.782178217821766"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="10.693069306930678"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="19.60396039603959"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="28.5148514851485"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="37.42574257425741"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="46.33663366336633"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="55.247524752475236"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="64.15841584158414"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="73.06930693069306"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="81.98019801980197"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="90.89108910891089"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="99.80198019801979"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="108.7128712871287"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="117.62376237623762"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="126.53465346534652"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="135.44554455445547"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="144.35643564356434"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="153.26732673267327"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="162.1782178217822"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="171.08910891089107"
+        y="-60"
+      />
+    </svg>
+  </div>
+  <div
+    class="sc-bdfBwQ hFCjbE"
+  >
+    <div
+      class="sc-gsTCUz hHGVOw"
+    >
+      <p
+        class="sc-hKgILt iQbUVb"
+      >
+        8751
+      </p>
+      <p
+        class="sc-dlfnbm hwPpdE"
+      >
+        profile views
+      </p>
+    </div>
+    <svg
+      height="60"
+      width="180"
+    >
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="1.782178217821766"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="10.693069306930678"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="19.60396039603959"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="28.5148514851485"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="37.42574257425741"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="46.33663366336633"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="55.247524752475236"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="64.15841584158414"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="73.06930693069306"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="81.98019801980197"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="90.89108910891089"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="99.80198019801979"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="108.7128712871287"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="117.62376237623762"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="126.53465346534652"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="135.44554455445547"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="144.35643564356434"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="153.26732673267327"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="162.1782178217822"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="171.08910891089107"
+        y="-60"
+      />
+    </svg>
+  </div>
+  <div
+    class="sc-bdfBwQ hFCjbE"
+  >
+    <div
+      class="sc-gsTCUz hHGVOw"
+    >
+      <p
+        class="sc-hKgILt iQbUVb"
+      >
+        904
+      </p>
+      <p
+        class="sc-dlfnbm hwPpdE"
+      >
+        clicked statements
+      </p>
+    </div>
+    <svg
+      height="60"
+      width="180"
+    >
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="1.782178217821766"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="10.693069306930678"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="19.60396039603959"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="28.5148514851485"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="37.42574257425741"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="46.33663366336633"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="55.247524752475236"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="64.15841584158414"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="73.06930693069306"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="81.98019801980197"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="90.89108910891089"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="99.80198019801979"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="108.7128712871287"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="117.62376237623762"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="126.53465346534652"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="135.44554455445547"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="144.35643564356434"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="153.26732673267327"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="162.1782178217822"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="171.08910891089107"
+        y="-60"
+      />
+    </svg>
+  </div>
+  <div
+    class="sc-bdfBwQ hFCjbE"
+  >
+    <div
+      class="sc-gsTCUz hHGVOw"
+    >
+      <p
+        class="sc-hKgILt iQbUVb"
+      >
+        116
+      </p>
+      <p
+        class="sc-dlfnbm hwPpdE"
+      >
+        website click-throughs
+      </p>
+    </div>
+    <svg
+      height="60"
+      width="180"
+    >
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="1.782178217821766"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="10.693069306930678"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="19.60396039603959"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="28.5148514851485"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="37.42574257425741"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="46.33663366336633"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="55.247524752475236"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="64.15841584158414"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="73.06930693069306"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="81.98019801980197"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="90.89108910891089"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="99.80198019801979"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="108.7128712871287"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="117.62376237623762"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="126.53465346534652"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="135.44554455445547"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="144.35643564356434"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="153.26732673267327"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="162.1782178217822"
+        y="-60"
+      />
+      <rect
+        class="bar"
+        style="transform: scale(1, -1);"
+        width="7.12871287128713"
+        x="171.08910891089107"
+        y="-60"
+      />
+    </svg>
+  </div>
+</div>
+`;

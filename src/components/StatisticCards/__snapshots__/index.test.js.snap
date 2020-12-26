@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cards Statistic component should render 1`] = `
+<div
+  class="sc-hKgILt kvtJcu"
+>
+  <div
+    class="sc-bdfBwQ ezRtVh"
+  >
+    <p
+      class="sc-gsTCUz jPeWXq"
+    >
+      Played
+    </p>
+    <p
+      class="sc-dlfnbm bfXIvc"
+    >
+      1254
+    </p>
+  </div>
+  <div
+    class="sc-bdfBwQ ezRtVh"
+  >
+    <p
+      class="sc-gsTCUz jPeWXq"
+    >
+      Finished
+    </p>
+    <p
+      class="sc-dlfnbm bfXIvc"
+    >
+      809
+    </p>
+  </div>
+  <div
+    class="sc-bdfBwQ ezRtVh"
+  >
+    <p
+      class="sc-gsTCUz jPeWXq"
+    >
+      Likes
+    </p>
+    <p
+      class="sc-dlfnbm bfXIvc"
+    >
+      114
+    </p>
+  </div>
+  <div
+    class="sc-bdfBwQ ezRtVh"
+  >
+    <p
+      class="sc-gsTCUz jPeWXq"
+    >
+      Comments
+    </p>
+    <p
+      class="sc-dlfnbm bfXIvc"
+    >
+      27
+    </p>
+  </div>
+</div>
+`;

@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from '.';
+import { SidePanel } from '.';
 
-describe('App component', () => {
+describe('Side Panel component', () => {
   it('should render', () => {
-    const { container } = render(<App />);
+    const { container } = render(<SidePanel />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

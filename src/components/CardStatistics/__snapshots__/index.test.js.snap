@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Statistics Card component should render 1`] = `
+<div
+  class="sc-bdfBwQ ezRtVh"
+>
+  <p
+    class="sc-gsTCUz jPeWXq"
+  >
+    Project Views
+  </p>
+  <p
+    class="sc-dlfnbm bfXIvc"
+  >
+    25670
+  </p>
+</div>
+`;

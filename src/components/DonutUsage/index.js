@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import { shape, string, number } from 'prop-types';
 import { Typography } from '@material-ui/core';
 import styled, { keyframes } from 'styled-components';
 import * as S from './styles';
@@ -29,7 +29,7 @@ const Circle = styled.circle`
   stroke-width: 5;
 `;
 
-export const UsageDonut = ({ data }) => {
+export const DonutUsage = ({ data }) => {
   const { name, usage, total, color } = data;
   const radius = 45;
   const percentage = usage / total;
@@ -67,4 +67,13 @@ export const UsageDonut = ({ data }) => {
       </Typography>
     </S.SVGWrapper>
   );
+};
+
+DonutUsage.propTypes = {
+  data: shape({
+    name: string.isRequired,
+    usage: number.isRequired,
+    total: number.isRequired,
+    color: string.isRequired,
+  }).isRequired,
 };

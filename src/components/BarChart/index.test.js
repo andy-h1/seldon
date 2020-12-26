@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from '.';
+import { BarChart } from '.';
 
-describe('App component', () => {
+describe('Bar Chart component', () => {
   it('should render', () => {
-    const { container } = render(<App />);
+    const { container } = render(<BarChart />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

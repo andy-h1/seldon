@@ -1,5 +1,5 @@
 import React from 'react';
-import { UsageDonut } from '.';
+import { DonutUsage } from '.';
 
 const data = [
   {
@@ -35,15 +35,15 @@ const data = [
 ];
 
 export default {
-  title: 'UsageDonut',
-  component: UsageDonut,
+  title: 'DonutUsage',
+  component: DonutUsage,
 };
 
 export const Template = (args) => {
   return (
     <>
       {data.map((item) => {
-        return <UsageDonut {...args} data={item} key={item.name} />;
+        return <DonutUsage {...args} data={item} key={item.name} />;
       })}
     </>
   );

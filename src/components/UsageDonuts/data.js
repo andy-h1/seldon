@@ -1,6 +1,6 @@
 import { colours } from '../../tokens';
 
-export const UsageStatisticsData = [
+export const UsageDonutsData = [
   {
     name: 'Components',
     usage: 895,

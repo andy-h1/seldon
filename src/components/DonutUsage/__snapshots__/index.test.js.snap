@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Usage Donut component should render 1`] = `
+<div
+  class="sc-hKgILt hltTKj"
+>
+  <svg
+    height="100%"
+    viewBox="0 0 100 100"
+    width="100%"
+  >
+    <circle
+      class="sc-gsTCUz cRaPmX"
+      cx="50"
+      cy="50"
+      r="45"
+      transform="rotate (-90 50 50)"
+    />
+    <circle
+      class="sc-jSgupP gdSHyo"
+      color="red"
+      cx="50"
+      cy="50"
+      r="45"
+      transform="rotate (-90 50 50)"
+    />
+    <text
+      class="sc-eCssSg kPwlTr"
+      x="50%"
+      y="50%"
+    >
+      750
+    </text>
+    <defs>
+      <lineargradient
+        id="donutFill"
+      >
+        <stop
+          offset="0%"
+          stop-color="#83f9b0"
+        />
+        <stop
+          offset="100%"
+          stop-color="#cbf07d"
+        />
+      </lineargradient>
+    </defs>
+  </svg>
+  <p
+    class="MuiTypography-root MuiTypography-body1"
+  >
+    Youtube Views
+     used
+  </p>
+  <p
+    class="MuiTypography-root MuiTypography-body1"
+  >
+    250
+    /
+    1000
+     left
+  </p>
+</div>
+`;
