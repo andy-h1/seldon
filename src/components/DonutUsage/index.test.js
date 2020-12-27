@@ -8,6 +8,7 @@ const mockData = {
   total: 1000,
   color: 'red',
 };
+
 describe('Usage Donut component', () => {
   it('should render', () => {
     const { container } = render(<DonutUsage data={mockData} />);

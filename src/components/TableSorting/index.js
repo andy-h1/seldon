@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableSortLabel } from '@material-ui/core';
+import { convertTime, convertToCurrency, getComparator, stableSort } from '../../utils';
 import * as S from './styles';
 
 const createData = (title, time, earned) => {
@@ -14,49 +15,6 @@ const rows = [
   createData('Material Desktop System', 1560, 128.5),
   createData('iOS toolkit for Figma', 2880, 58.0),
 ];
-
-const convertTime = (number) => {
-  const day = Math.floor(number / 1440);
-  const hour = Math.floor((number - day * 1440) / 60);
-
-  if (number >= 1440) {
-    return `${day} days`;
-  }
-  if (number > 60 && number < 1440) {
-    return `${hour} hours`;
-  }
-  return `${number} mins`;
-};
-
-const convertToCurrency = (data) => {
-  return `$${data.toFixed(2)}`;
-};
-
-const descendingComparator = (a, b, orderBy) => {
-  if (b[orderBy] < a[orderBy]) {
-    return -1;
-  }
-  if (b[orderBy] > a[orderBy]) {
-    return 1;
-  }
-  return 0;
-};
-
-const getComparator = (order, orderBy) => {
-  return order === 'desc'
-    ? (a, b) => descendingComparator(a, b, orderBy)
-    : (a, b) => -descendingComparator(a, b, orderBy);
-};
-
-const stableSort = (array, comparator) => {
-  const stabilizedThis = array.map((el, index) => [el, index]);
-  stabilizedThis.sort((a, b) => {
-    const order = comparator(a[0], b[0]);
-    if (order !== 0) return order;
-    return a[1] - b[1];
-  });
-  return stabilizedThis.map((el) => el[0]);
-};
 
 const headCells = [
   { id: 'title', numeric: false, disablePadding: true, label: 'Last Purchased' },
