@@ -1,10 +1,10 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { TableMain } from '.';
 
 describe('Main Table component', () => {
-  it('should render', async () => {
+  it('should render', () => {
     const { container } = render(<TableMain />);
-    await waitFor(() => expect(container.firstChild).toMatchSnapshot());
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

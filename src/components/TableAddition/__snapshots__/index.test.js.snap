@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Addition Table component should render 1`] = `
+<div
+  class="MuiTableContainer-root"
+>
+  <table
+    aria-label="sum table"
+    class="MuiTable-root makeStyles-root-1"
+  >
+    <thead
+      class="MuiTableHead-root"
+    >
+      <tr
+        class="MuiTableRow-root makeStyles-header-3 MuiTableRow-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-4 MuiTableCell-alignLeft MuiTableCell-sizeSmall"
+          scope="col"
+        >
+          Type of Action
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-4 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          scope="col"
+        >
+          Value One
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-4 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          scope="col"
+        >
+          Value Two
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="MuiTableBody-root"
+    >
+      <tr
+        class="MuiTableRow-root"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-text-6 MuiTableCell-alignLeft MuiTableCell-sizeSmall"
+        >
+          Videos played
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-headerText-4 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+        >
+          10
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-headerText-4 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+        >
+          10
+        </td>
+      </tr>
+      <tr
+        class="MuiTableRow-root"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-text-6 MuiTableCell-alignLeft MuiTableCell-sizeSmall"
+        >
+          Watch finished
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-headerText-4 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+        >
+          100
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-headerText-4 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+        >
+          1000
+        </td>
+      </tr>
+      <tr
+        class="MuiTableRow-root"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-text-6 MuiTableCell-alignLeft MuiTableCell-sizeSmall"
+        >
+          Comment posted
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-headerText-4 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+        >
+          100
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-headerText-4 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+        >
+          100
+        </td>
+      </tr>
+      <tr
+        class="MuiTableRow-root"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-text-6 MuiTableCell-alignLeft MuiTableCell-sizeSmall"
+        >
+          Likes gained
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-headerText-4 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+        >
+          1000
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-headerText-4 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+        >
+          10000
+        </td>
+      </tr>
+      <tr
+        class="MuiTableRow-root"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-totalText-7 MuiTableCell-alignLeft MuiTableCell-sizeSmall"
+        >
+          Total
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-totalText-7 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+        >
+          1210
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-totalText-7 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+        >
+          11110
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
