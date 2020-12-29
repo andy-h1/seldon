@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sorting Table component should render 1`] = `
+<div
+  class="makeStyles-root-1"
+>
+  <div
+    class="MuiTableContainer-root"
+  >
+    <table
+      aria-label="sub-table "
+      aria-labelledby="tableTitle"
+      class="MuiTable-root makeStyles-table-3"
+    >
+      <thead
+        class="MuiTableHead-root makeStyles-header-4"
+      >
+        <tr
+          class="MuiTableRow-root makeStyles-row-6 MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-9"
+              role="button"
+              tabindex="0"
+            >
+              Last Purchased
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-9"
+              role="button"
+              tabindex="0"
+            >
+              When
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+            scope="col"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-9"
+              role="button"
+              tabindex="0"
+            >
+              Earned
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-7 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+            role="cell"
+            scope="row"
+          >
+            Mockups for Figma
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-7 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          >
+            16 mins
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-earnedText-8 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          >
+            $24.40
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-7 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+            role="cell"
+            scope="row"
+          >
+            Material Icons Set
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-7 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          >
+            2 hours
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-earnedText-8 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          >
+            $14.40
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-7 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+            role="cell"
+            scope="row"
+          >
+            Material Design System
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-7 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          >
+            1 days
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-earnedText-8 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          >
+            $68.00
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-7 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+            role="cell"
+            scope="row"
+          >
+            Material Desktop System
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-7 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          >
+            1 days
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-earnedText-8 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          >
+            $128.50
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-7 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+            role="cell"
+            scope="row"
+          >
+            iOS toolkit for Figma
+          </th>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-text-7 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          >
+            2 days
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-earnedText-8 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+          >
+            $58.00
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
