@@ -1,17 +1,10 @@
 import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
+import { subtotalValueOne, subtotalValueTwo } from '../../utils';
 import * as S from './styles';
 
 const createRow = (desc, columnOne, columnTwo) => {
   return { desc, columnOne, columnTwo };
-};
-
-const subtotalValueOne = (items) => {
-  return items.map(({ columnOne }) => columnOne).reduce((sum, i) => sum + i, 0);
-};
-
-const subtotalValueTwo = (items) => {
-  return items.map(({ columnTwo }) => columnTwo).reduce((sum, i) => sum + i, 0);
 };
 
 const rows = [
