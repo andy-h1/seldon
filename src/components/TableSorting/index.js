@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableSortLabel } from '@material-ui/core';
+import { Table, TableBody, TableContainer, TableRow, TableSortLabel } from '@material-ui/core';
 import { convertTime, convertToCurrency, getComparator, stableSort } from '../../utils';
 import * as S from './styles';
 
@@ -29,11 +29,10 @@ const EnhancedTableHead = (props) => {
   };
 
   return (
-    <TableHead className={classes.header}>
-      <TableRow className={classes.row}>
+    <S.TableHeader>
+      <S.Row>
         {headCells.map((headCell) => (
-          <TableCell
-            className={classes.headerText}
+          <S.TableHeaderCell
             key={headCell.id}
             align={headCell.numeric ? 'right' : 'left'}
             padding={headCell.disablePadding ? 'none' : 'default'}
@@ -52,10 +51,10 @@ const EnhancedTableHead = (props) => {
                 </span>
               ) : null}
             </TableSortLabel>
-          </TableCell>
+          </S.TableHeaderCell>
         ))}
-      </TableRow>
-    </TableHead>
+      </S.Row>
+    </S.TableHeader>
   );
 };
 
@@ -80,7 +79,7 @@ export const TableSorting = () => {
   return (
     <div className={classes.root}>
       <TableContainer>
-        <Table size="small" className={classes.table} aria-labelledby="tableTitle" aria-label="sub-table ">
+        <Table size="small" aria-labelledby="tableTitle" aria-label="sub-table ">
           <EnhancedTableHead
             classes={classes}
             order={order}
@@ -92,15 +91,11 @@ export const TableSorting = () => {
             {stableSort(rows, getComparator(order, orderBy)).map((row) => {
               return (
                 <TableRow key={row.title}>
-                  <TableCell className={classes.text} component="th" scope="row" padding="none" align="left">
+                  <S.Cell component="th" scope="row" padding="none" align="left">
                     {row.title}
-                  </TableCell>
-                  <TableCell className={classes.text} align="right">
-                    {convertTime(row.time)}
-                  </TableCell>
-                  <TableCell className={classes.earnedText} align="right">
-                    {convertToCurrency(row.earned)}
-                  </TableCell>
+                  </S.Cell>
+                  <S.Cell align="right">{convertTime(row.time)}</S.Cell>
+                  <S.EarnedText align="right">{convertToCurrency(row.earned)}</S.EarnedText>
                 </TableRow>
               );
             })}
