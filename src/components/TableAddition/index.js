@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
+import { Table, TableBody, TableContainer, TableHead, TableRow } from '@material-ui/core';
 import { subtotalValueOne, subtotalValueTwo } from '../../utils';
 import * as S from './styles';
 
@@ -21,43 +21,25 @@ export const TableAddition = () => {
     <TableContainer>
       <Table classes={classes} size="small" aria-label="sum table">
         <TableHead>
-          <TableRow className={classes.header}>
-            <TableCell className={classes.headerText} align="left">
-              Type of Action
-            </TableCell>
-            <TableCell className={classes.headerText} align="right">
-              Value One
-            </TableCell>
-            <TableCell className={classes.headerText} align="right">
-              Value Two
-            </TableCell>
-          </TableRow>
+          <S.TableHeader>
+            <S.TableHeaderCell align="left">Type of Action</S.TableHeaderCell>
+            <S.TableHeaderCell align="right">Value One</S.TableHeaderCell>
+            <S.TableHeaderCell align="right">Value Two</S.TableHeaderCell>
+          </S.TableHeader>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow classes={classes.row} key={row.desc}>
-              <TableCell className={classes.text} align="left">
-                {row.desc}
-              </TableCell>
-              <TableCell className={classes.headerText} align="right">
-                {row.columnOne}
-              </TableCell>
-              <TableCell className={classes.headerText} align="right">
-                {row.columnTwo}
-              </TableCell>
-            </TableRow>
+            <S.Row classes={classes.row} key={row.desc}>
+              <S.Cell align="left">{row.desc}</S.Cell>
+              <S.Cell align="right">{row.columnOne}</S.Cell>
+              <S.Cell align="right">{row.columnTwo}</S.Cell>
+            </S.Row>
           ))}
 
           <TableRow>
-            <TableCell className={classes.totalText} align="left">
-              Total
-            </TableCell>
-            <TableCell className={classes.totalText} align="right">
-              {subtotalValueOne(rows)}
-            </TableCell>
-            <TableCell className={classes.totalText} align="right">
-              {subtotalValueTwo(rows)}
-            </TableCell>
+            <S.TotalTextCell align="left">Total</S.TotalTextCell>
+            <S.TotalTextCell align="right">{subtotalValueOne(rows)}</S.TotalTextCell>
+            <S.TotalTextCell align="right">{subtotalValueTwo(rows)}</S.TotalTextCell>
           </TableRow>
         </TableBody>
       </Table>
