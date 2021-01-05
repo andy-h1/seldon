@@ -1,10 +1,12 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { LineGraph } from '.';
 
 describe('Line Graph component', () => {
-  it('should render', async () => {
+  it('should render', () => {
     const { container } = render(<LineGraph />);
-    await waitFor(() => expect(container.firstChild).toMatchSnapshot());
+    expect(container.firstChild).toMatchSnapshot();
   });
+
+  it.todo('should show correct value when hovering over the line graph');
 });

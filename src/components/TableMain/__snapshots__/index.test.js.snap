@@ -13,18 +13,18 @@ exports[`Main Table component should render 1`] = `
       class="MuiTable-root"
     >
       <thead
-        class="MuiTableHead-root makeStyles-header-4"
+        class="MuiTableHead-root sc-bdfBwQ QcFOd"
       >
         <tr
           class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignLeft MuiTableCell-paddingNone"
+            class="MuiTableCell-root MuiTableCell-head sc-gsTCUz ALHlQ MuiTableCell-alignLeft MuiTableCell-paddingNone"
             scope="col"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-3"
               role="button"
               tabindex="0"
             >
@@ -43,12 +43,12 @@ exports[`Main Table component should render 1`] = `
           </th>
           <th
             aria-sort="ascending"
-            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-head sc-gsTCUz ALHlQ MuiTableCell-alignRight"
             scope="col"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7 MuiTableSortLabel-active"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-3 MuiTableSortLabel-active"
               role="button"
               tabindex="0"
             >
@@ -71,12 +71,12 @@ exports[`Main Table component should render 1`] = `
             </span>
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-head sc-gsTCUz ALHlQ MuiTableCell-alignRight"
             scope="col"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-3"
               role="button"
               tabindex="0"
             >
@@ -94,12 +94,12 @@ exports[`Main Table component should render 1`] = `
             </span>
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-head sc-gsTCUz ALHlQ MuiTableCell-alignRight"
             scope="col"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-3"
               role="button"
               tabindex="0"
             >
@@ -117,12 +117,12 @@ exports[`Main Table component should render 1`] = `
             </span>
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-head sc-gsTCUz ALHlQ MuiTableCell-alignRight"
             scope="col"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-3"
               role="button"
               tabindex="0"
             >
@@ -140,12 +140,12 @@ exports[`Main Table component should render 1`] = `
             </span>
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-5 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-head sc-gsTCUz ALHlQ MuiTableCell-alignRight"
             scope="col"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-7"
+              class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-3"
               role="button"
               tabindex="0"
             >
@@ -165,40 +165,40 @@ exports[`Main Table component should render 1`] = `
         </tr>
       </thead>
       <tbody
-        class="MuiTableBody-root makeStyles-row-6"
+        class="MuiTableBody-root sc-dlfnbm hEGGFo"
       >
         <tr
           class="MuiTableRow-root"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-paddingNone"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-paddingNone"
             role="cell"
             scope="row"
           >
             Social Networks traffic
           </th>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             95
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             95
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             31
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             11
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             0
           </td>
@@ -207,34 +207,34 @@ exports[`Main Table component should render 1`] = `
           class="MuiTableRow-root"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-paddingNone"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-paddingNone"
             role="cell"
             scope="row"
           >
             Instagram stories marketing
           </th>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             186
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             186
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             92
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             8
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             1
           </td>
@@ -243,34 +243,34 @@ exports[`Main Table component should render 1`] = `
           class="MuiTableRow-root"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-paddingNone"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-paddingNone"
             role="cell"
             scope="row"
           >
             Visitors from video sources
           </th>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             329
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             329
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             256
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             32
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             4
           </td>
@@ -279,34 +279,34 @@ exports[`Main Table component should render 1`] = `
           class="MuiTableRow-root"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-paddingNone"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-paddingNone"
             role="cell"
             scope="row"
           >
             Other Referrers
           </th>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             804
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             804
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             697
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             40
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-text-3 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-body sc-hKgILt blMROb MuiTableCell-alignRight"
           >
             22
           </td>

@@ -1,4 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
+import { TableBody, TableCell, TableHead } from '@material-ui/core';
 import { colours } from '../../tokens';
 
 export const useStyles = makeStyles(() => ({
@@ -17,25 +19,29 @@ export const useStyles = makeStyles(() => ({
     top: 20,
     width: 1,
   },
-  text: {
-    color: 'white',
-    fontSize: '19px',
-    fontWeight: 'bold',
-    borderBottom: `1 px solid ${colours.black}`,
-  },
-  header: {
-    borderBottom: `3px solid ${colours.black}`,
-  },
-  headerText: {
-    color: 'white',
-    fontSize: '16px',
-  },
-  row: {
-    borderBottom: `1 px solid ${colours.black}`,
-  },
   labelText: {
     '&.MuiTableSortLabel-root, &.MuiTableSortLabel-active': {
       color: `${colours.white}`,
     },
   },
 }));
+
+export const TableHeader = styled(TableHead)`
+  border-bottom: 3px solid ${colours.black};
+`;
+
+export const TableHeaderCell = styled(TableCell)`
+  color: white;
+  font-size: 16px;
+`;
+
+export const Table = styled(TableBody)`
+  border-bottom: 1 px solid ${colours.black};
+`;
+
+export const Cell = styled(TableCell)`
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  border-bottom: 1 px solid ${colours.black};
+`;

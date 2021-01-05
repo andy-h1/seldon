@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableSortLabel } from '@material-ui/core';
+import { Table, TableContainer, TableRow, TableSortLabel } from '@material-ui/core';
 import { getComparator, stableSort } from '../../utils';
 import * as S from './styles';
 
@@ -31,11 +31,10 @@ const EnhancedTableHead = (props) => {
   };
 
   return (
-    <TableHead className={classes.header}>
+    <S.TableHeader>
       <TableRow>
         {headCells.map((headCell) => (
-          <TableCell
-            className={classes.headerText}
+          <S.TableHeaderCell
             key={headCell.id}
             align={headCell.numeric ? 'right' : 'left'}
             padding={headCell.disablePadding ? 'none' : 'default'}
@@ -54,10 +53,10 @@ const EnhancedTableHead = (props) => {
                 </span>
               ) : null}
             </TableSortLabel>
-          </TableCell>
+          </S.TableHeaderCell>
         ))}
       </TableRow>
-    </TableHead>
+    </S.TableHeader>
   );
 };
 
@@ -90,32 +89,22 @@ export const TableMain = () => {
             onRequestSort={handleRequestSort}
             rowCount={rows.length}
           />
-          <TableBody className={classes.row}>
+          <S.Table>
             {stableSort(rows, getComparator(order, orderBy)).map((row) => {
               return (
                 <TableRow key={row.campaign}>
-                  <TableCell className={classes.text} component="th" scope="row" padding="none">
+                  <S.Cell component="th" scope="row" padding="none">
                     {row.campaign}
-                  </TableCell>
-                  <TableCell className={classes.text} align="right">
-                    {row.efficiency}
-                  </TableCell>
-                  <TableCell className={classes.text} align="right">
-                    {row.plays}
-                  </TableCell>
-                  <TableCell className={classes.text} align="right">
-                    {row.finished}
-                  </TableCell>
-                  <TableCell className={classes.text} align="right">
-                    {row.likes}
-                  </TableCell>
-                  <TableCell className={classes.text} align="right">
-                    {row.comments}
-                  </TableCell>
+                  </S.Cell>
+                  <S.Cell align="right">{row.efficiency}</S.Cell>
+                  <S.Cell align="right">{row.plays}</S.Cell>
+                  <S.Cell align="right">{row.finished}</S.Cell>
+                  <S.Cell align="right">{row.likes}</S.Cell>
+                  <S.Cell align="right">{row.comments}</S.Cell>
                 </TableRow>
               );
             })}
-          </TableBody>
+          </S.Table>
         </Table>
       </TableContainer>
     </div>
