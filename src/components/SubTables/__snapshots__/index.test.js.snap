@@ -2,7 +2,7 @@
 
 exports[`Sub Tables component should render 1`] = `
 <div
-  class="sc-jSgupP bzzqMO"
+  class="sc-jrAGrp crsmeN"
 >
   <div
     class="MuiTableContainer-root"
@@ -147,21 +147,21 @@ exports[`Sub Tables component should render 1`] = `
       <table
         aria-label="sub-table "
         aria-labelledby="tableTitle"
-        class="MuiTable-root makeStyles-table-4"
+        class="MuiTable-root"
       >
         <thead
-          class="MuiTableHead-root makeStyles-header-5"
+          class="MuiTableHead-root sc-jSgupP dUjYEK"
         >
           <tr
-            class="MuiTableRow-root makeStyles-row-7 MuiTableRow-head"
+            class="MuiTableRow-root sc-iBPRYJ kiMqhJ MuiTableRow-head"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-6 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-head sc-gKsewC jAQcIU MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
               scope="col"
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-10"
+                class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-4"
                 role="button"
                 tabindex="0"
               >
@@ -179,12 +179,12 @@ exports[`Sub Tables component should render 1`] = `
               </span>
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-6 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-head sc-gKsewC jAQcIU MuiTableCell-alignRight MuiTableCell-sizeSmall"
               scope="col"
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-10"
+                class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-4"
                 role="button"
                 tabindex="0"
               >
@@ -202,12 +202,12 @@ exports[`Sub Tables component should render 1`] = `
               </span>
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head makeStyles-headerText-6 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-head sc-gKsewC jAQcIU MuiTableCell-alignRight MuiTableCell-sizeSmall"
               scope="col"
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-10"
+                class="MuiButtonBase-root MuiTableSortLabel-root makeStyles-labelText-4"
                 role="button"
                 tabindex="0"
               >
@@ -233,19 +233,19 @@ exports[`Sub Tables component should render 1`] = `
             class="MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-body makeStyles-text-8 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-fubCfw kPNrLf MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
               role="cell"
               scope="row"
             >
               Mockups for Figma
             </th>
             <td
-              class="MuiTableCell-root MuiTableCell-body makeStyles-text-8 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-fubCfw kPNrLf MuiTableCell-alignRight MuiTableCell-sizeSmall"
             >
               16 mins
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body makeStyles-earnedText-9 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-pFZIQ kiTIrS MuiTableCell-alignRight MuiTableCell-sizeSmall"
             >
               $24.40
             </td>
@@ -254,19 +254,19 @@ exports[`Sub Tables component should render 1`] = `
             class="MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-body makeStyles-text-8 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-fubCfw kPNrLf MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
               role="cell"
               scope="row"
             >
               Material Icons Set
             </th>
             <td
-              class="MuiTableCell-root MuiTableCell-body makeStyles-text-8 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-fubCfw kPNrLf MuiTableCell-alignRight MuiTableCell-sizeSmall"
             >
               2 hours
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body makeStyles-earnedText-9 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-pFZIQ kiTIrS MuiTableCell-alignRight MuiTableCell-sizeSmall"
             >
               $14.40
             </td>
@@ -275,19 +275,19 @@ exports[`Sub Tables component should render 1`] = `
             class="MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-body makeStyles-text-8 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-fubCfw kPNrLf MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
               role="cell"
               scope="row"
             >
               Material Design System
             </th>
             <td
-              class="MuiTableCell-root MuiTableCell-body makeStyles-text-8 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-fubCfw kPNrLf MuiTableCell-alignRight MuiTableCell-sizeSmall"
             >
               1 days
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body makeStyles-earnedText-9 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-pFZIQ kiTIrS MuiTableCell-alignRight MuiTableCell-sizeSmall"
             >
               $68.00
             </td>
@@ -296,19 +296,19 @@ exports[`Sub Tables component should render 1`] = `
             class="MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-body makeStyles-text-8 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-fubCfw kPNrLf MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
               role="cell"
               scope="row"
             >
               Material Desktop System
             </th>
             <td
-              class="MuiTableCell-root MuiTableCell-body makeStyles-text-8 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-fubCfw kPNrLf MuiTableCell-alignRight MuiTableCell-sizeSmall"
             >
               1 days
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body makeStyles-earnedText-9 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-pFZIQ kiTIrS MuiTableCell-alignRight MuiTableCell-sizeSmall"
             >
               $128.50
             </td>
@@ -317,19 +317,19 @@ exports[`Sub Tables component should render 1`] = `
             class="MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-body makeStyles-text-8 MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-fubCfw kPNrLf MuiTableCell-alignLeft MuiTableCell-paddingNone MuiTableCell-sizeSmall"
               role="cell"
               scope="row"
             >
               iOS toolkit for Figma
             </th>
             <td
-              class="MuiTableCell-root MuiTableCell-body makeStyles-text-8 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-fubCfw kPNrLf MuiTableCell-alignRight MuiTableCell-sizeSmall"
             >
               2 days
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body makeStyles-earnedText-9 MuiTableCell-alignRight MuiTableCell-sizeSmall"
+              class="MuiTableCell-root MuiTableCell-body sc-pFZIQ kiTIrS MuiTableCell-alignRight MuiTableCell-sizeSmall"
             >
               $58.00
             </td>
