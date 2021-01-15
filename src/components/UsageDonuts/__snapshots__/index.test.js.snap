@@ -3,7 +3,7 @@
 exports[`Usage Donuts component should render 1`] = `
 <div>
   <div
-    class="sc-gKsewC iBQUSI"
+    class="sc-eCssSg gMSejA"
   >
     <div
       class="MuiTypography-root MuiTypography-h5"
@@ -26,10 +26,10 @@ exports[`Usage Donuts component should render 1`] = `
     </button>
   </div>
   <div
-    class="sc-iBPRYJ jPDZtQ"
+    class="sc-jSgupP kqoRPd"
   >
     <div
-      class="sc-hKgILt hltTKj"
+      class="sc-bdfBwQ bQXjbu"
     >
       <svg
         height="100%"
@@ -37,14 +37,14 @@ exports[`Usage Donuts component should render 1`] = `
         width="100%"
       >
         <circle
-          class="sc-gsTCUz cRaPmX"
+          class="sc-hKgILt iGsmlS"
           cx="50"
           cy="50"
           r="45"
           transform="rotate (-90 50 50)"
         />
         <circle
-          class="sc-jSgupP kYzWQU"
+          class="sc-dlfnbm eJVRyc"
           color="#cbf07d"
           cx="50"
           cy="50"
@@ -52,7 +52,7 @@ exports[`Usage Donuts component should render 1`] = `
           transform="rotate (-90 50 50)"
         />
         <text
-          class="sc-eCssSg kPwlTr"
+          class="sc-gsTCUz dCDiYt"
           x="50%"
           y="50%"
         >
@@ -89,7 +89,7 @@ exports[`Usage Donuts component should render 1`] = `
       </p>
     </div>
     <div
-      class="sc-hKgILt hltTKj"
+      class="sc-bdfBwQ bQXjbu"
     >
       <svg
         height="100%"
@@ -97,14 +97,14 @@ exports[`Usage Donuts component should render 1`] = `
         width="100%"
       >
         <circle
-          class="sc-gsTCUz cRaPmX"
+          class="sc-hKgILt iGsmlS"
           cx="50"
           cy="50"
           r="45"
           transform="rotate (-90 50 50)"
         />
         <circle
-          class="sc-jSgupP gnHkjn"
+          class="sc-dlfnbm dQeNdz"
           color="#83f9b0"
           cx="50"
           cy="50"
@@ -112,7 +112,7 @@ exports[`Usage Donuts component should render 1`] = `
           transform="rotate (-90 50 50)"
         />
         <text
-          class="sc-eCssSg kPwlTr"
+          class="sc-gsTCUz dCDiYt"
           x="50%"
           y="50%"
         >
@@ -149,7 +149,7 @@ exports[`Usage Donuts component should render 1`] = `
       </p>
     </div>
     <div
-      class="sc-hKgILt hltTKj"
+      class="sc-bdfBwQ bQXjbu"
     >
       <svg
         height="100%"
@@ -157,14 +157,14 @@ exports[`Usage Donuts component should render 1`] = `
         width="100%"
       >
         <circle
-          class="sc-gsTCUz cRaPmX"
+          class="sc-hKgILt iGsmlS"
           cx="50"
           cy="50"
           r="45"
           transform="rotate (-90 50 50)"
         />
         <circle
-          class="sc-jSgupP gJyorR"
+          class="sc-dlfnbm bGChyl"
           color="#f3aa18"
           cx="50"
           cy="50"
@@ -172,7 +172,7 @@ exports[`Usage Donuts component should render 1`] = `
           transform="rotate (-90 50 50)"
         />
         <text
-          class="sc-eCssSg kPwlTr"
+          class="sc-gsTCUz dCDiYt"
           x="50%"
           y="50%"
         >
@@ -209,7 +209,7 @@ exports[`Usage Donuts component should render 1`] = `
       </p>
     </div>
     <div
-      class="sc-hKgILt hltTKj"
+      class="sc-bdfBwQ bQXjbu"
     >
       <svg
         height="100%"
@@ -217,14 +217,14 @@ exports[`Usage Donuts component should render 1`] = `
         width="100%"
       >
         <circle
-          class="sc-gsTCUz cRaPmX"
+          class="sc-hKgILt iGsmlS"
           cx="50"
           cy="50"
           r="45"
           transform="rotate (-90 50 50)"
         />
         <circle
-          class="sc-jSgupP gVJVbs"
+          class="sc-dlfnbm fNpScQ"
           color="#f371a8"
           cx="50"
           cy="50"
@@ -232,7 +232,7 @@ exports[`Usage Donuts component should render 1`] = `
           transform="rotate (-90 50 50)"
         />
         <text
-          class="sc-eCssSg kPwlTr"
+          class="sc-gsTCUz dCDiYt"
           x="50%"
           y="50%"
         >
@@ -269,7 +269,7 @@ exports[`Usage Donuts component should render 1`] = `
       </p>
     </div>
     <div
-      class="sc-hKgILt hltTKj"
+      class="sc-bdfBwQ bQXjbu"
     >
       <svg
         height="100%"
@@ -277,14 +277,14 @@ exports[`Usage Donuts component should render 1`] = `
         width="100%"
       >
         <circle
-          class="sc-gsTCUz cRaPmX"
+          class="sc-hKgILt iGsmlS"
           cx="50"
           cy="50"
           r="45"
           transform="rotate (-90 50 50)"
         />
         <circle
-          class="sc-jSgupP cyjpgD"
+          class="sc-dlfnbm eJwWEj"
           color="#80e88c"
           cx="50"
           cy="50"
@@ -292,7 +292,7 @@ exports[`Usage Donuts component should render 1`] = `
           transform="rotate (-90 50 50)"
         />
         <text
-          class="sc-eCssSg kPwlTr"
+          class="sc-gsTCUz dCDiYt"
           x="50%"
           y="50%"
         >
